@@ -87,6 +87,7 @@ PLATFORMS
   ruby
   x64-mingw32
   x86_64-linux
+  x86_64-linux-musl
 
 DEPENDENCIES
   jekyll (~> 4.0.0)
@@ -99,4 +100,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.1.4
+   2.2.2
