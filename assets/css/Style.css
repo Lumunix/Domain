@@ -5,7 +5,7 @@ layout: Stylesheet
 @import "/assets/css/highlight.css";
 /* Containers: Body, Container, Box, Main, Header, Content */
 
-:root {
+html, html[data-theme="light"] {
     --main-hue: 0;
     --primary-bg-color: hsl(var(--main-hue), 0%, 100%);
     --secondary-bg-color: hsl(var(--main-hue), 0%, 96.9%);
@@ -61,6 +61,66 @@ layout: Stylesheet
   --heading-font-family: Georgia, serif;
   --primary-font-family: sans-serif;
   --secondary-font-family: sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, html[data-theme="dark"] {
+      --main-hue: 0;
+      --primary-bg-color: hsl(110.05, 100%, 47.25%);
+      --secondary-bg-color: hsl(110.05, 100%, 47.25%);
+      --ternary-bg-color: hsl(110.05, 100%, 47.25%);
+      --quaternary-bg-color: hsl(110.05, 100%, 47.25%);
+      --quinary-bg-color: hsl(110.05, 100%, 47.25%);
+
+      --primary-border-color: hsl(110.05, 100%, 47.25%);
+      --secondary-border-color: hsl(110.05, 100%, 47.25%);
+      --ternary-border-color: hsl(110.05, 100%, 47.25%);
+
+      --primary-box-shadow-color: hsl(110.05, 100%, 47.25%);
+      --secondary-box-shadow-color: hsl(110.05, 100%, 47.25%);
+
+      --primary-text-color: hsl(110.05, 100%, 47.25%);
+      --secondary-text-color: hsl(110.05, 100%, 47.25%);
+      --tertiary-text-color: hsl(110.05, 100%, 47.25%);
+
+      --horizontal-rule-color: rgb(228, 227, 226);
+      --anchor-text-color: hsl(210, 52.8%, 51.0%);
+      --anchor-link-color: hsl(205, 12%, 70%);
+      --search-placeholder-color: hsl(var(--main-hue), 0%, 60.0%);
+      --searchbox-shadow-color:  hsl(204, 63.0%, 78.8%);
+      --heading-font-family: Georgia, serif;
+      --primary-font-family: sans-serif;
+      --secondary-font-family: sans-serif;
+    }
+
+    html[data-theme="light"] {
+      --main-hue: 0;
+      --primary-bg-color: hsl(var(--main-hue), 0%, 100%);
+      --secondary-bg-color: hsl(var(--main-hue), 0%, 96.9%);
+      --ternary-bg-color: hsl(var(--main-hue), 0%, 91.4%);
+      --quaternary-bg-color: hsl(var(--main-hue), 0%, 93%);
+      --quinary-bg-color: hsl(var(--main-hue), 100%, 100%);
+
+      --primary-border-color: hsl(var(--main-hue), 0%, 96.9%);
+      --secondary-border-color: hsl(var(--main-hue), 0%, 91.4%);
+      --ternary-border-color: hsl(var(--main-hue), 0%, 87.5%);
+
+      --primary-box-shadow-color: hsl(var(--main-hue), 0%, 86.7%);
+      --secondary-box-shadow-color: hsl(var(--main-hue), 0%, 81.2%);
+
+      --primary-text-color: hsl(var(--main-hue), 0%, 33.3%);
+      --secondary-text-color: hsl(var(--main-hue), 0%, 53.3%);
+      --tertiary-text-color: hsl(var(--main-hue), 0%, 43.4%);
+
+      --horizontal-rule-color: rgb(228, 227, 226);
+      --anchor-text-color: hsl(210, 52.8%, 51.0%);
+      --anchor-link-color: hsl(205, 12%, 70%);
+      --search-placeholder-color: hsl(var(--main-hue), 0%, 60.0%);
+      --searchbox-shadow-color:  hsl(204, 63.0%, 78.8%);
+      --heading-font-family: Georgia, serif;
+      --primary-font-family: sans-serif;
+      --secondary-font-family: sans-serif;
+  }
 }
 
 
