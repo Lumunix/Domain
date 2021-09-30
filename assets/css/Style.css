@@ -34,6 +34,35 @@ layout: Stylesheet
     --secondary-font-family: sans-serif;
 }
 
+[data-theme='dark'] {
+  --main-hue: 0;
+  --primary-bg-color: hsl(110.05, 100%, 47.25%);
+  --secondary-bg-color: hsl(110.05, 100%, 47.25%);
+  --ternary-bg-color: hsl(110.05, 100%, 47.25%);
+  --quaternary-bg-color: hsl(110.05, 100%, 47.25%);
+  --quinary-bg-color: hsl(110.05, 100%, 47.25%);
+
+  --primary-border-color: hsl(110.05, 100%, 47.25%);
+  --secondary-border-color: hsl(110.05, 100%, 47.25%);
+  --ternary-border-color: hsl(110.05, 100%, 47.25%);
+
+  --primary-box-shadow-color: hsl(110.05, 100%, 47.25%);
+  --secondary-box-shadow-color: hsl(110.05, 100%, 47.25%);
+
+  --primary-text-color: hsl(110.05, 100%, 47.25%);
+  --secondary-text-color: hsl(110.05, 100%, 47.25%);
+  --tertiary-text-color: hsl(110.05, 100%, 47.25%);
+
+  --horizontal-rule-color: rgb(228, 227, 226);
+  --anchor-text-color: hsl(210, 52.8%, 51.0%);
+  --anchor-link-color: hsl(205, 12%, 70%);
+  --search-placeholder-color: hsl(var(--main-hue), 0%, 60.0%);
+  --searchbox-shadow-color:  hsl(204, 63.0%, 78.8%);
+  --heading-font-family: Georgia, serif;
+  --primary-font-family: sans-serif;
+  --secondary-font-family: sans-serif;
+}
+
 
 html {
     scroll-behavior: smooth;

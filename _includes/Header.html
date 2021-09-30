@@ -24,7 +24,7 @@
 * File: Header.html
 * Author@Raghuveer S
 *
-* This file contains the markup for the site heading, subheading, user description, 
+* This file contains the markup for the site heading, subheading, user description,
 *  user avatar, searchbar, site tagline.
 *
 {%- endcomment -%}
@@ -51,7 +51,7 @@
             {%- assign avatar_margin = 'margin-top-10-neg' -%}
             {%- assign menu_margin = 'margin-top-10-neg' -%}
         {%- endif -%}
-        
+
         {%- if site.user.display != true -%}
             {%- assign header_direction = 'site-heading-ltr' -%}
         {%- endif -%}
@@ -162,7 +162,7 @@
                 {%- endif -%}
               </p>
               {%- endif -%}
-            </div> 
+            </div>
         </div>
         {%- endif -%}
     </div>
@@ -227,6 +227,7 @@
     </div>
     <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
     <script src="/assets/js/Search.js"></script>
+
     {%- endif -%}
     {%- if page.permalink != "/" -%}
     <div class="main-site-subheader disable-select" id="scroll-head">
@@ -236,8 +237,9 @@
                 <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
             </svg>
         </div>
-        <p class="back-p">Home</p>    
+        <p class="back-p">Home</p>
     </div>
     {%- endif -%}
+    <a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+    <script src="/assets/js/mode-switcher.js"></script>
 </header>
-
