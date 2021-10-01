@@ -28,14 +28,14 @@ url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 # your social media links etc
 #######################################################################
 
-heading: Simply Jekyll
+heading: Foam Cannon
 subheading: # subheading won't work without a tagline,
           # tagline is mandatory if you want the
           # suheading to appear. The reason is
           # having a heading and a subheading looks
           # ridiculous.
   enabled: true
-  name: Notes and Thoughts
+  name: Second Brain / Zettelkasten
 tagline: # subheading won't work without a tagline,
          # tagline is mandatory if you want the
          # suheading to appear. The reason is
@@ -45,28 +45,28 @@ tagline: # subheading won't work without a tagline,
          # the subheading to support the main heading
          # which in this case is 'Knowledge Continuum'
   enabled: true
-  name: An experiment to spark conversations
+  name: Thoughts and Notes Organization
 copyright:
-  year: 2020
-  msg: Raghuveer S # This is a mandatory attribute for copyright to be displayed
+  year: 2021
+  msg: Lumunix # This is a mandatory attribute for copyright to be displayed
 
 user:
   display: true # setting it to false will remove the header image and bio
                 # Note that user settings come wholesale, it does not have the
                 # granular enabling or disabling as with the 'preferences'
                 # or the site-wide settings.
-  name: Raghuveer S
-  bio: Programmer ∪ Writer. Interested in constraints and correspondences.
-  email: raghu-veer@outlook.com
+  name: Lumunix
+  bio: Software Engineer, Tech Enthusiast
+  email: lumunix@icloud.com
   photo: /assets/img/profile.png
-  alt_link: rgvr.me
+  alt_link: lumunix.github.io
   social: # just leave the field blank or type in null, if you don't have a
           # particular social media account and it won't appear
     enabled: true  # turn this to true
     twitter: Lumunix
     github: Lumunix
     youtube: Lumunix
-    linkedin: rgvr
+    linkedin: null
     twitch: lumunix
     facebook: null
     instagram: lum_unix
