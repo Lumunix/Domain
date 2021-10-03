@@ -21,6 +21,8 @@
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "/" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "lumunix/lumunix.github.io" # GitHub username/repo-name
+
 
 #######################################################################
 # Settings related to the Header and your About page go here,such as
@@ -45,7 +47,7 @@ tagline: # subheading won't work without a tagline,
          # the subheading to support the main heading
          # which in this case is 'Knowledge Continuum'
   enabled: true
-  name: Thoughts and Notes Organization
+  name: Blast of Knowledge
 copyright:
   year: 2021
   msg: Lumunix # This is a mandatory attribute for copyright to be displayed
@@ -78,6 +80,7 @@ user:
 # search results, wiki-style-links, sidenotes, marginnotes,
 # transclusion, pagepreview, backlinks, related posts, highlighting,
 # context menu, flashcards, sliding window, wrapping
+# comments, reCaptcha
 #####################################################################
 preferences:
   search:
@@ -117,6 +120,30 @@ preferences:
       enabled: true
   flashcards:
     enabled: true
+  reCaptcha:
+    siteKey                : 6LeLYEYaAAAAAFGdotkfMHnCB3iA1hFY1dJmcoSy
+    secret                 : KMFMK/JphRpu1sXpWls+8HlOsAHT/YV+U4qylPp+mkz4St1WStQGj2ccaJunnpcv3yXAfTh/utP4P9Wa+HuV7xqzkh5BWbYMeZjx9FNC5iVYSsq9QME3/cZnWL3TEDFkYpjBLC2VDmz81cepo3zSdMrGhSgmql6IYoQzgkFa17M=
+  comments:
+    system: staticman # false (default), "disqus", "staticman"
+    disqus:
+      shortname: lumunix # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    staticman:
+      allowedFields          :  ['name', 'email', 'url', 'message']
+      branch                 : "master" # "master"
+      commitMessage          :  "New comment by {fields.name}"
+      filename               :  comment-{@timestamp}
+      format                 :  "yml"
+      moderation             :  true
+      path                   :  "/_data/comments/{options.slug}" #(default)
+      requiredFields         :  ['name', 'email', 'message']
+      transforms:
+        email                :  "md5"
+      generatedFields:
+        date:
+          type               :  "date"
+          options:
+            format           :  "iso8601" #(default), "timestamp-seconds", "timestamp-milliseconds"
+      endpoint               : "https://api.staticman.net/v3/entry/github/" # URL of your own deployment with trailing slash, will fallback to the public instance
 
 encoding: utf-8
 
@@ -127,11 +154,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-tidy
 
-# Disqus Comments
-disqus:
-    # Leave shortname blank to disable comments site-wide.
-    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: rgvr
 
 markdown: kramdown
 
