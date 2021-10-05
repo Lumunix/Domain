@@ -14,6 +14,8 @@ Gray: 0°, 0%, 20%
 
 */
 @import "/assets/css/highlight.css";
+@import "Variables";
+@import "Comment-Styles";
 
 /* Containers: Body, Container, Box, Main, Header, Content */
 
