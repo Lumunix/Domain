@@ -121,8 +121,9 @@ preferences:
   flashcards:
     enabled: true
   reCaptcha:
-    siteKey                : 6LeLYEYaAAAAAFGdotkfMHnCB3iA1hFY1dJmcoSy
-    secret                 : KMFMK/JphRpu1sXpWls+8HlOsAHT/YV+U4qylPp+mkz4St1WStQGj2ccaJunnpcv3yXAfTh/utP4P9Wa+HuV7xqzkh5BWbYMeZjx9FNC5iVYSsq9QME3/cZnWL3TEDFkYpjBLC2VDmz81cepo3zSdMrGhSgmql6IYoQzgkFa17M=
+    enabled: false
+    siteKey: 6LeLYEYaAAAAAFGdotkfMHnCB3iA1hFY1dJmcoSy
+    secret: KMFMK/JphRpu1sXpWls+8HlOsAHT/YV+U4qylPp+mkz4St1WStQGj2ccaJunnpcv3yXAfTh/utP4P9Wa+HuV7xqzkh5BWbYMeZjx9FNC5iVYSsq9QME3/cZnWL3TEDFkYpjBLC2VDmz81cepo3zSdMrGhSgmql6IYoQzgkFa17M=
   comments:
     system: staticman # false (default), "disqus", "staticman"
     disqus:
