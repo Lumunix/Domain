@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-
+foam_cannon_theme: light #Light(Default), Dark
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "lumunix/lumunix.github.io" # GitHub username/repo-name
