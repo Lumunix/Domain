@@ -33,7 +33,7 @@
     </div>
 
     {% if site.preferences.reCaptcha.enabled %}
-    <div id="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
+    <div id="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.preferences.reCaptcha.siteKey }}"></div>
     {% endif %}
 
     <button type="button" class="button" id="cancel-comment-reply-link" style="display: none">
