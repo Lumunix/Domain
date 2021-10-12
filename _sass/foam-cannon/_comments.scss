@@ -31,7 +31,7 @@ $comment-font-size: $base-font-size !default;
     // fields except the comment field get this class too
     // to keep them a reasonable size
     .narrowfield {
-        width: 420px;
+        width: 500px;
     }
 
     .hp {
@@ -46,6 +46,7 @@ $comment-font-size: $base-font-size !default;
         border: 1px solid rgba(0,0,0,.12);
         padding: 4px 5px;
         width: 100%;
+        box-sizing: border-box;
         font-size: $comment-font-size;
     }
     .notify-me, .g-recaptcha {
