@@ -1,4 +1,4 @@
-<form class="js-form form" method="post" action="{{ site.preferences.comments.staticman.endpoint }}">
+<form class="js-form form" method="post" action="{{ site.preferences.comments.staticman.staticman_url }}">
   <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
   <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
   <input type="hidden" id="comment-replying-to-uid" name="fields[replying_to_uid]" value="">
@@ -8,22 +8,21 @@
   <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.preferences.reCaptcha.secret }}">
   {% endif %}
 
+  <div class="textfield">
+    <label for="comment-form-message"><h2>Add Comment</h2>
+      <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
+    </label>
+  </div>
+
     <div class="textfield narrowfield">
-        <label for="comment-form-name"><h2>Comments</h2>
-      <label for="comment-form-name"><h3>Name</h3>
+      <label for="comment-form-name">Name
         <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
       </label>
     </div>
 
     <div class="textfield narrowfield">
-      <label for="comment-form-email"><h3>E-mail</h3>
+      <label for="comment-form-email">E-mail
         <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional)"/>
-      </label>
-    </div>
-
-    <div class="textfield">
-      <label for="comment-form-message"><h3>Comment</h3>
-        <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
       </label>
     </div>
 
