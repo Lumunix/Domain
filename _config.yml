@@ -52,6 +52,10 @@ copyright:
   year: 2021
   msg: Lumunix # This is a mandatory attribute for copyright to be displayed
 
+author: Scree # add your name
+author-img: profile.png # add your photo
+about-author: I am a scream. # add description
+
 user:
   display: true # setting it to false will remove the header image and bio
                 # Note that user settings come wholesale, it does not have the
@@ -141,9 +145,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-tidy
+  - jekyll-paginate
 
 
 markdown: kramdown
+paginate: 8
+paginate_path: "/page/:num"
 
 kramdown:
   input: GFM
