@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Context Menu
+   ========================================================================== */
+   .context-menu-res {
+     display: none;
+     position: absolute;
+     z-index: 10;
+     padding: 12px 0;
+     width: 240px;
+     background-color: $primary-bg-color;
+     border: solid 1px $ternary-border-color;
+     border-radius: 5px;
+     box-shadow: 1px 1px 15px $secondary-box-shadow-color;
+   }
+
+   .context-menu-res li {
+     line-height: 0.8rem;
+     padding-left: 0.2rem;
+     padding-top: 0.3rem;
+     padding-bottom: 0.3rem;
+   }
+
+   .context-menu-res--active {
+     display: block;
+   }
+
+   .context-menu-res li:hover {
+     color: $primary-text-color;
+     background-color: $secondary-bg-color;
+   }
+
+   .context-menu-res li:hover > .context-menu-res__link {
+     font-weight: bold;
+   }
+
+   .context-menu-res__link {
+     color: $primary-text-color;
+     text-decoration: none;
+   }
+   /* context-menu styling */
+   .context-menu {
+     display: none;
+     position: absolute;
+     z-index: 10;
+     padding: 12px 0;
+     width: 177px;
+     background-color: $primary-bg-color;
+     border: solid 1px $ternary-border-color;
+     border-radius: 5px;
+     box-shadow: 1px 1px 15px $secondary-box-shadow-color;
+   }
+
+   .context-menu--active {
+     display: block;
+   }
+
+   .context-menu__items {
+     list-style: none;
+     margin: 0;
+     padding-left: 6px;
+     padding-right: 6px;
+   }
+
+   .context-menu__item {
+     display: block;
+     margin-bottom: 4px;
+   }
+
+   .context-menu__item:last-child {
+     margin-bottom: 0;
+   }
+
+   .context-menu__link {
+     display: block;
+     padding: 4px 12px;
+     color: $primary-text-color;
+     text-decoration: none;
+     font-size: 12px;
+     font-family: $primary-font-family !important;
+   }
+
+   .context-menu__link:hover {
+     color: $primary-text-color;
+     background-color: $secondary-bg-color;
+   }

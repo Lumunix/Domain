@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Sidenote
+   ========================================================================== */
+.mn-right,
+.sn-right {
+  float: right;
+  clear: right;
+  font-family: $secondary-font-family !important;
+  font-size: 14px;
+  margin-right: -45%;
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.mn-left,
+.sn-left {
+  float: left;
+  clear: left;
+  font-family: $secondary-font-family !important;
+  font-size: 14px;
+  margin-left: -45%;
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sn-left:before,
+.sn-right:before {
+  font-family: $secondary-font-family !important;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sidenote-number:after {
+  content: counter(sidenote-counter);
+  font-size: 12px;
+  top: -0.5rem;
+  left: 0.1rem;
+}
+
+.sn-left:before,
+.sn-right:before {
+  content: counter(sidenote-counter) " ";
+  font-size: 14px;
+  top: -0.5rem;
+}
+
+blockquote .mn-left,
+blockquote .sn-left {
+  float: left;
+  clear: left;
+  margin-left: -58%;
+  width: 40%;
+  text-align: left;
+}
+
+li .mn-left,
+li .sn-left {
+  float: left;
+  clear: left;
+  margin-left: -53%;
+  width: 40%;
+  text-align: left;
+}
+
+blockquote .mn-right,
+blockquote .sn-right {
+  float: right;
+  clear: right;
+  margin-right: -59% !important;
+  width: 40%;
+  text-align: left;
+}
+
+li .mn-right,
+li .sn-right {
+  float: right;
+  clear: right;
+  margin-right: -49% !important;
+  width: 40%;
+  text-align: left;
+}
