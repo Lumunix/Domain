@@ -1,0 +1,214 @@
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
+   .box {
+     border-left: 1px solid $primary-border-color;
+     border-right: 1px solid $primary-border-color;
+     border-bottom: 1px solid $primary-border-color;
+     width: 60%;
+     //position: absolute;
+     top: 0;
+   }
+   .container {
+     display: flex;
+     position: relative;
+     flex-direction: column;
+     justify-content: center;
+     //position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     align-items: center;
+     max-width: 1250px;
+     margin-right: auto;
+     margin-left: auto;
+   }
+
+   @media screen and (max-width: 1200px) {
+     .mn-right,
+     .sn-right {
+       margin-right: -35%;
+       width: 30%;
+     }
+
+     .mn-left,
+     .sn-left {
+       margin-left: -35%;
+       width: 30%;
+     }
+
+     blockquote .mn-left,
+     blockquote .sn-left {
+       margin-left: -51% !important;
+       width: 30% !important;
+     }
+
+     li .mn-left,
+     li .sn-left {
+       margin-left: -43% !important;
+       width: 30% !important;
+     }
+
+     blockquote .mn-right,
+     blockquote .sn-right {
+       margin-right: -56% !important;
+       width: 30% !important;
+     }
+
+     li .mn-right,
+     li .sn-right {
+       margin-right: -41% !important;
+       width: 30% !important;
+     }
+
+     .related-group {
+       background-color: $quaternary-bg-color !important;
+       margin-left: 10px;
+       width: 90% !important;
+       height: 100%;
+       border-radius: 10px;
+       cursor: pointer;
+     }
+   }
+   @media screen and (max-width: 1024px) {
+     .tooltip .right {
+       display: none;
+     }
+
+     .tooltip .bottom {
+       min-width: 300px;
+       top: 40px;
+       left: 50%;
+       transform: translate(-50%, 0);
+       padding: 10px 20px;
+       color: $primary-text-color;
+       background-color: $primary-bg-color;
+       font-weight: normal;
+       font-size: 13px;
+       border-radius: 8px;
+       position: absolute;
+       z-index: 99999999;
+       box-sizing: border-box;
+       box-shadow: 0 1px 8px $primary-box-shadow-color;
+       display: none;
+     }
+
+     .tooltip:hover .bottom {
+       display: block;
+     }
+
+     .tooltip .bottom i {
+       position: absolute;
+       bottom: 100%;
+       left: 50%;
+       margin-left: -12px;
+       width: 24px;
+       height: 12px;
+       overflow: hidden;
+     }
+
+     .tooltip .bottom i::after {
+       content: '';
+       position: absolute;
+       width: 12px;
+       height: 12px;
+       left: 50%;
+       transform: translate(-50%,50%) rotate(45deg);
+       background-color: $primary-bg-color;
+       box-shadow: 0 1px 8px $primary-box-shadow-color;
+     }
+
+     .bottom .tooltip-title {
+       font-size: 14px;
+       font-weight: 500;
+       display: inline-block;
+     }
+
+     .bottom .tooltip-excerpt {
+       font-size: 12px;
+       display: inline-block;
+     }
+
+     .bottom .tooltip-excerpt a {
+       font-size: 12px;
+     }
+   }
+   @media screen and (max-width: 800px) {
+     .box {
+       width: 100%;
+     }
+
+     label {
+       cursor: pointer;
+     }
+
+     label.margin-toggle:not(.sidenote-number) {
+       display: inline;
+     }
+
+     .mn-left,
+     .mn-right,
+     .sn-left,
+     .sn-right {
+       display: none;
+     }
+
+     .margin-toggle:checked + .mn-left,
+     .margin-toggle:checked + .mn-right,
+     .margin-toggle:checked + .sn-left,
+     .margin-toggle:checked + .sn-right {
+       display: block;
+       float: left;
+       left: 1rem;
+       clear: both;
+       width: 95%;
+       margin: 1rem 2.5%;
+       vertical-align: baseline;
+       position: relative;
+     }
+
+     .sketch-left,
+     .sketch-right {
+       display: inline-block !important;
+       float: left !important;
+       left: 1rem !important;
+       clear: both !important;
+       width: 95% !important;
+       margin: 1rem 2.5% !important;
+       vertical-align: baseline !important;
+       position: relative !important;
+       padding-bottom: 10px;
+     }
+   }
+   @media screen and (max-width: 500px) {
+     .box {
+       width: 100%;
+       max-width: 100% !important;
+       border-left: none !important;
+       border-right: none !important;
+     }
+
+     .related-wrapper {
+       grid-template-columns: repeat(1, 1fr);
+     }
+   }
+   /* smartphones, touchscreens */
+   @media (pointer: coarse) {
+     .tooltip:hover .bottom,
+     .tooltip:hover .right {
+       display: none;
+     }
+
+     .feed-context {
+       padding: 2px 10px 0;
+       height: 70px;
+       right: 0;
+       margin-top: 15px;
+     }
+
+     .search-shortcut {
+       display: none;
+     }
+   }
