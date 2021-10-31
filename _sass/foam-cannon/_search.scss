@@ -250,3 +250,44 @@
   cursor: pointer;
   font-weight: 600;
 }
+//Buttons
+/* Blogposts: Post-heading, Post-subheading, Post-content, Related Posts*/
+.main-site-subheader {
+  border-bottom: 1px solid $primary-border-color;
+  padding-left: 15px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-item:nth-of-type(1) {
+  padding-left: 5px !important;
+}
+
+.menu-item {
+  flex-basis: auto;
+  border-right: 1px solid $primary-border-color;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 17px 5px 14px;
+  text-decoration: none;
+}
+
+.menu-item-icon {
+  margin-top: 7px;
+  align-self: center;
+  justify-self: center;
+  stroke: $primary-text-color;
+}
+
+.menu-item-text {
+  margin-top: 5px;
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 0.7rem;
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+}

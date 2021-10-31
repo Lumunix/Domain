@@ -1,5 +1,5 @@
 ---
-layout: Main
+layout: Post
 title: Tags
 permalink: /tags/
 ---
@@ -7,7 +7,6 @@ permalink: /tags/
 {% assign tag_words = site_tags | split:',' | sort %}
 
 <section class="blog-tags">
-  <h1>Tags in Blog</h1>
   <ul class="tags">
 <!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
   {% for this_word in tag_words %}
