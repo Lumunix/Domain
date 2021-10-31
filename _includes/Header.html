@@ -65,12 +65,6 @@
           <path d="M11.5 19.5C15.9183 19.5 19.5 15.9183 19.5 11.5C19.5 7.08172 15.9183 3.5 11.5 3.5C7.08172 3.5 3.5 7.08172 3.5 11.5C3.5 15.9183 7.08172 19.5 11.5 19.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M21.5 21.5L17.15 17.15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        {%- if site.preferences.search.shortcut_hint.enabled -%}
-        <div class="search-shortcut disable-select">
-            <kbd class="disable-select">Shift</kbd>
-            <kbd class="disable-select">s</kbd>
-        </div>
-        {%- endif -%}
         <label for="search-input"></label>
         <input type="text" id="search-input" autocomplete="off" placeholder="Search {{site.heading}}..."/>
         <div id="search-results" class="search-results"></div>

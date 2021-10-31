@@ -33,27 +33,6 @@
   z-index: 1;
 }
 
-.search-shortcut {
-  position: absolute;
-  line-height: 0.8;
-  margin-top: -2px;
-  padding-top: 12.5px;
-  z-index: 1;
-  right: 0 !important;
-  padding-right: 20px;
-}
-
-.search-shortcut kbd:first-child,
-.search-shortcut kbd:nth-child(2) {
-  vertical-align: middle;
-  display: inline-block;
-  color: $secondary-text-color;
-  font-size: 0.8em;
-  border-radius: 0.2em;
-  padding: 0.1em 0.3em;
-  box-shadow: 0 0 8px $primary-box-shadow-color;
-}
-
 .searchbar input[type="text"]:focus {
   border-color: $primary-border-color;
   box-shadow: 0 0 8px 0 $searchbox-shadow-color;
