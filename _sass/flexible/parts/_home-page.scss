@@ -66,7 +66,14 @@
   flex-wrap: wrap;
   align-items: stretch;
 }
+.content-header {
+  padding: 20px;
+  padding-left: 260px;
 
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
 .contact {
   .contact-title {
     position: relative;
