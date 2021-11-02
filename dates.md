@@ -1,5 +1,5 @@
 ---
-layout: Post
+layout: Main
 title: By Date
 permalink: /dates/
 ---
