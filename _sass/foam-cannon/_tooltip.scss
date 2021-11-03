@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Tooltip
+   ========================================================================== */
+
+   .tooltip {
+     display: inline;
+     position: relative;
+     text-align: left;
+   }
+
+   .tooltip bottom {
+     display: none;
+   }
+
+   .tooltip .right {
+     min-width: 300px;
+     top: 50%;
+     left: 100%;
+     margin-left: 20px;
+     transform: translate(0, -50%);
+     padding: 10px 20px;
+     color: $primary-text-color;
+     background-color: $primary-bg-color;
+     font-weight: normal;
+     font-size: 13px;
+     border-radius: 8px;
+     position: absolute;
+     z-index: 99999999;
+     box-sizing: border-box;
+     box-shadow: 0 1px 8px $primary-box-shadow-color;
+     display: none;
+   }
+
+   .tooltip:hover .right {
+     display: block;
+   }
+
+   .tooltip .right i {
+     position: absolute;
+     top: 50%;
+     right: 100%;
+     margin-top: -12px;
+     width: 12px;
+     height: 24px;
+     overflow: hidden;
+   }
+
+   .tooltip .right i::after {
+     content: '';
+     position: absolute;
+     width: 12px;
+     height: 12px;
+     left: 0;
+     top: 50%;
+     transform: translate(50%,-50%) rotate(-45deg);
+     background-color: $primary-bg-color;
+     box-shadow: 0 1px 8px $primary-box-shadow-color;
+   }
+
+   .right .tooltip-title {
+     font-size: 14px;
+     font-weight: 600;
+     display: inline-block;
+   }
+
+   .right .tooltip-excerpt {
+     font-size: 12px;
+     display: inline-block;
+   }
+
+   .right .tooltip-excerpt a {
+     font-size: 12px;
+   }
+
+   input.margin-toggle {
+     display: none;
+   }
+
+   .srs-svg {
+     stroke: $primary-text-color;
+   }
+
+   label.sidenote-number {
+     display: inline;
+   }
+
+   label.margin-toggle:not(.sidenote-number) {
+     display: none;
+   }
+
+   .spaced-rep {
+     display: none;
+   }
+
+   input.srs-toggle {
+     display: none;
+   }
+
+   label.srs-toggle {
+     display: inline;
+     cursor: pointer;
+   }
+
+   .srs-toggle:checked + .spaced-rep {
+     display: block !important;
+     left: 1rem;
+     clear: both;
+     margin: 1rem 2.5%;
+     vertical-align: baseline;
+     position: relative;
+     padding: 12px;
+     width: 240px;
+     background-color: $primary-bg-color;
+     border: solid 1px $ternary-border-color;
+     border-radius: 5px;
+     box-shadow: 1px 1px 15px $secondary-box-shadow-color;
+     word-wrap: break-word;
+   }

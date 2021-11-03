@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: How to customize your _config.yml
 tags: Jekyll Theme Customizability
 comments: true
