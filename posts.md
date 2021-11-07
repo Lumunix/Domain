@@ -1,7 +1,6 @@
 ---
 layout: Blank
-title: By Date
-permalink: /dates/
+permalink: /posts/
 ---
 <div>
   <main>
