@@ -1,58 +1,63 @@
 /* ==========================================================================
    Page
    ========================================================================== */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
-   *, *::after, *::before {
-     box-sizing: border-box;
-   }
-   .wrapper {
-     max-width: auto;
-     position: relative;
-   }
+.wrapper {
+  max-width: auto;
+  position: relative;
+}
 
-   .post, .article-page {
-     background-color: #fff;
-   }
+.article-page,
+.post {
+  background-color: #fff;
+}
 
-   ::-moz-selection {
-     background: rgba(38, 57, 89, 0.8);
-     color: $white;
-   }
+::-moz-selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: $white;
+}
 
-   ::selection {
-     background: rgba(38, 57, 89, 0.8);
-     color: $white;
-   }
+::selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: $white;
+}
 
-   .clearfix::before, .clearfix::after {
-     content: "";
-     display: table;
-   }
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+}
 
 .clearfix::after {
-     clear: both;
+  clear: both;
 }
 
 .box {
-     border-left: 1px solid $primary-border-color;
-     border-right: 1px solid $primary-border-color;
-     border-bottom: 1px solid $primary-border-color;
-     width: 50%;
-     top: 0;
+  border-left: 1px solid $primary-border-color;
+  border-right: 1px solid $primary-border-color;
+  border-bottom: 1px solid $primary-border-color;
+  width: 50%;
+  top: 0;
 }
+
 .container {
-     display: flex;
-     position: relative;
-     flex-direction: column;
-     justify-content: center;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     align-items: center;
-     max-width: auto;
-     margin-right: auto;
-     margin-left: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  max-width: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .alt_link {
@@ -67,6 +72,7 @@
   padding-left: 3px;
   color: $anchor-text-color;
 }
+
 .stale-link {
   background-color: #ffffc4;
 }
@@ -93,7 +99,6 @@
   text-decoration: underline;
 }
 //---replace below here
-
 
 html {
   background: $primary-bg-color;
@@ -321,68 +326,68 @@ hr {
   height: 1px;
   margin-top: -10px;
 }
-   @media screen and (max-width: 1200px) {
-     .box {
-       width: 100%;
-     }
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 100%;
+  }
 
-     label {
-       cursor: pointer;
-     }
+  label {
+    cursor: pointer;
+  }
 
-     label.margin-toggle:not(.sidenote-number) {
-       display: inline;
-     }
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
 
-     .mn-left,
-     .mn-right,
-     .sn-left,
-     .sn-right {
-       display: none;
-     }
+  .mn-left,
+  .mn-right,
+  .sn-left,
+  .sn-right {
+    display: none;
+  }
 
-     .margin-toggle:checked + .mn-left,
-     .margin-toggle:checked + .mn-right,
-     .margin-toggle:checked + .sn-left,
-     .margin-toggle:checked + .sn-right {
-       display: block;
-       float: left;
-       left: 1rem;
-       clear: both;
-       width: 95%;
-       margin: 1rem 2.5%;
-       vertical-align: baseline;
-       position: relative;
-     }
+  .margin-toggle:checked + .mn-left,
+  .margin-toggle:checked + .mn-right,
+  .margin-toggle:checked + .sn-left,
+  .margin-toggle:checked + .sn-right {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    vertical-align: baseline;
+    position: relative;
+  }
 
-     .sketch-left,
-     .sketch-right {
-       display: inline-block !important;
-       float: left !important;
-       left: 1rem !important;
-       clear: both !important;
-       width: 95% !important;
-       margin: 1rem 2.5% !important;
-       vertical-align: baseline !important;
-       position: relative !important;
-       padding-bottom: 10px;
-     }
-   }
-   /* smartphones, touchscreens */
-   @media (pointer: coarse) {
-     .tooltip:hover .bottom,
-     .tooltip:hover .right {
-       display: none;
-     }
+  .sketch-left,
+  .sketch-right {
+    display: inline-block !important;
+    float: left !important;
+    left: 1rem !important;
+    clear: both !important;
+    width: 95% !important;
+    margin: 1rem 2.5% !important;
+    vertical-align: baseline !important;
+    position: relative !important;
+    padding-bottom: 10px;
+  }
+}
+/* smartphones, touchscreens */
+@media (pointer: coarse) {
+  .tooltip:hover .bottom,
+  .tooltip:hover .right {
+    display: none;
+  }
 
-     .feed-context {
-       padding: 2px 10px 0;
-       height: 70px;
-       right: 0;
-       margin-top: 15px;
-     }
+  .feed-context {
+    padding: 2px 10px 0;
+    height: 70px;
+    right: 0;
+    margin-top: 15px;
+  }
 
-     .search-shortcut {
-       display: none;
-     }
-   }
+  .search-shortcut {
+    display: none;
+  }
+}
