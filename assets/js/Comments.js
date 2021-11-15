@@ -69,12 +69,7 @@ var addComment = function() {
     select('.js-modal-text').innerHTML = message;
     select('body').classList.add('show-modal');
   }
-
-  // Staticman comment replies, from https://github.com/mmistakes/made-mistakes-jekyll
-  // modified from Wordpress https://core.svn.wordpress.org/trunk/wp-includes/js/comment-reply.js
-  // Released under the GNU General Public License - https://wordpress.org/about/gpl/
-  // addComment.moveForm is called from comment.html when the reply link is clicked.
-
+  
   return {
 
     // commId - the id attribute of the comment replied to (e.g., "comment-10")
