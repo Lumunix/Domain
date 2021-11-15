@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Page
+   Content
    ========================================================================== */
 *,
 *::after,
@@ -325,69 +325,4 @@ hr {
   border: 0 none;
   height: 1px;
   margin-top: -10px;
-}
-@media screen and (max-width: 1200px) {
-  .box {
-    width: 100%;
-  }
-
-  label {
-    cursor: pointer;
-  }
-
-  label.margin-toggle:not(.sidenote-number) {
-    display: inline;
-  }
-
-  .mn-left,
-  .mn-right,
-  .sn-left,
-  .sn-right {
-    display: none;
-  }
-
-  .margin-toggle:checked + .mn-left,
-  .margin-toggle:checked + .mn-right,
-  .margin-toggle:checked + .sn-left,
-  .margin-toggle:checked + .sn-right {
-    display: block;
-    float: left;
-    left: 1rem;
-    clear: both;
-    width: 95%;
-    margin: 1rem 2.5%;
-    vertical-align: baseline;
-    position: relative;
-  }
-
-  .sketch-left,
-  .sketch-right {
-    display: inline-block !important;
-    float: left !important;
-    left: 1rem !important;
-    clear: both !important;
-    width: 95% !important;
-    margin: 1rem 2.5% !important;
-    vertical-align: baseline !important;
-    position: relative !important;
-    padding-bottom: 10px;
-  }
-}
-/* smartphones, touchscreens */
-@media (pointer: coarse) {
-  .tooltip:hover .bottom,
-  .tooltip:hover .right {
-    display: none;
-  }
-
-  .feed-context {
-    padding: 2px 10px 0;
-    height: 70px;
-    right: 0;
-    margin-top: 15px;
-  }
-
-  .search-shortcut {
-    display: none;
-  }
 }
