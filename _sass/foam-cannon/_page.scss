@@ -2,6 +2,37 @@
    Page
    ========================================================================== */
 
+   *, *::after, *::before {
+     box-sizing: border-box;
+   }
+   .wrapper {
+     max-width: auto;
+     position: relative;
+   }
+
+   .post, .article-page {
+     background-color: #fff;
+   }
+
+   ::-moz-selection {
+     background: rgba(38, 57, 89, 0.8);
+     color: $white;
+   }
+
+   ::selection {
+     background: rgba(38, 57, 89, 0.8);
+     color: $white;
+   }
+
+   .clearfix::before, .clearfix::after {
+     content: "";
+     display: table;
+   }
+
+.clearfix::after {
+     clear: both;
+}
+
 .box {
      border-left: 1px solid $primary-border-color;
      border-right: 1px solid $primary-border-color;
@@ -23,7 +54,7 @@
      margin-right: auto;
      margin-left: auto;
 }
-/*Test items */
+
 .alt_link {
   margin-top: -12px;
   font-size: 13px !important;
@@ -140,7 +171,6 @@ ul {
   color: $primary-text-color;
   font-family: $secondary-font-family;
   font-size: 15px;
-  /* Let's set the font-size to something old-man friendly */
 }
 
 blockquote a,
@@ -291,7 +321,6 @@ hr {
   height: 1px;
   margin-top: -10px;
 }
-/* End test items*/
    @media screen and (max-width: 1200px) {
      .box {
        width: 100%;

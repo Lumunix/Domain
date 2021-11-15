@@ -3,21 +3,13 @@
  * Copyright 2021 Lumunix
  * Licensed under MIT
 */
-/*
-/* Variables */
+
 @import "foam-cannon/variables";
-
-/* Highlight */
 @import "foam-cannon/highlight";
-
-
-/* Core CSS */
-//@import "foam-cannon/style";
-
-
-/* Components */
 @import "foam-cannon/tooltip";
 @import "foam-cannon/toc";
+@import "foam-cannon/home";
+@import "foam-cannon/post";
 @import "foam-cannon/page";
 @import "foam-cannon/pagination";
 @import "foam-cannon/sidenote";
@@ -25,10 +17,8 @@
 @import "foam-cannon/comments";
 @import "foam-cannon/related";
 @import "foam-cannon/search";
-
-
-
-/* Utility classes */
+@import "foam-cannon/normalize";
+@import "foam-cannon/variables";
+@import "foam-cannon/media";
+@import "foam-cannon/tag";
 @import "foam-cannon/util";
-
-@import "flexible/main"
