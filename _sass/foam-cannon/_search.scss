@@ -206,29 +206,7 @@
   opacity: 1;
   transition: opacity ease 400ms, width 0s, height 0s;
 }
-//Back Button
-.back-icon {
-  background-color: $quinary-bg-color;
-  fill: currentColor;
-  color: $primary-text-color;
-  margin-top: 5px;
-  padding-left: 5px;
-  fill: currentColor;
-  cursor: pointer;
-}
 
-.back-icon,
-.back-p {
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.back-p {
-  color: $primary-text-color;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: 600;
-}
 //Buttons
 /* Blogposts: Post-heading, Post-subheading, Post-content, Related Posts*/
 .main-site-subheader {

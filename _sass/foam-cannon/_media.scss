@@ -1,7 +1,9 @@
+/* ==========================================================================
+   Media
+   ========================================================================== */
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1024px) {
   .post {
-    width: 48%;
     max-width: 100%;
     margin: 0 0.9% 1.5%;
     flex-direction: column;
@@ -81,7 +83,6 @@
     padding: 10px;
   }
   .post {
-    width: 98%;
     max-width: 100%;
     margin: 2%;
     flex-direction: column;

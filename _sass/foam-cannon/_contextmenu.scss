@@ -94,3 +94,8 @@
    .feed-title-excerpt-block:hover {
        background-color: var(--secondary-bg-color);
    }
+
+   .popup {
+     position: absolute;
+     display: none;
+   }
