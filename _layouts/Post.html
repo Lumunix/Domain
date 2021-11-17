@@ -7,9 +7,6 @@ layout: Main
     <div class="page-cover-image">
       <figure>
         <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
-        {% if page.fig-caption %}
-          <figcaption>{{page.fig-caption}}</figcaption>
-        {% endif %}
       </figure>
     </div> <!-- End Page Cover Image -->
     {% else %}
