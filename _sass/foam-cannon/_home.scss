@@ -95,7 +95,7 @@
          position: absolute;
          top: 50%;
          left: 0;
-         background-color: $body-color;
+         background-color: $primary-text-color;
        }
        &::after {
          content: "";
@@ -106,7 +106,7 @@
          position: absolute;
          top: 50%;
          right: 0;
-         background-color: $body-color;
+         background-color: $primary-text-color;
        }
      }
      ul {

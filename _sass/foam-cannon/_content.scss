@@ -19,12 +19,12 @@
 
 ::-moz-selection {
   background: rgba(38, 57, 89, 0.8);
-  color: $white;
+  color: $primary-bg-color;
 }
 
 ::selection {
   background: rgba(38, 57, 89, 0.8);
-  color: $white;
+  color: $primary-bg-color;
 }
 
 .clearfix::after,
@@ -38,9 +38,9 @@
 }
 
 .box {
-  border-left: 1px solid $primary-border-color;
-  border-right: 1px solid $primary-border-color;
-  border-bottom: 1px solid $primary-border-color;
+  //border-left: 1px solid $primary-border-color;
+  //border-right: 1px solid $primary-border-color;
+  //border-bottom: 1px solid $primary-border-color;
   width: 50%;
   top: 0;
 }
