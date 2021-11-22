@@ -44,7 +44,7 @@ var addComment = function() {
     }).then(
       function (data) {
         if (data.ok) {
-          showModal('Comment submitted', 'Thanks! Your comment is <a href="https://github.com/lumunix/lumunix.github.io/pulls">pending</a>. It will appear when approved.');
+          showModal('Comment Submitted', 'Thanks! Your comment is <a href="https://github.com/lumunix/lumunix.github.io/pulls">pending</a>. It will appear when approved.');
           form.reset();
           form.doReset();
         } else {
@@ -69,7 +69,7 @@ var addComment = function() {
     select('.js-modal-text').innerHTML = message;
     select('body').classList.add('show-modal');
   }
-  
+
   return {
 
     // commId - the id attribute of the comment replied to (e.g., "comment-10")
