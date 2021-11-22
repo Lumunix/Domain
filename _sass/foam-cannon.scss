@@ -8,7 +8,7 @@
 @import "foam-cannon/tooltip";
 @import "foam-cannon/toc";
 @import "foam-cannon/home";
-@import "foam-cannon/post";
+@import "foam-cannon/footer";
 @import "foam-cannon/content";
 @import "foam-cannon/pagination";
 @import "foam-cannon/sidenote";
@@ -16,8 +16,7 @@
 @import "foam-cannon/comments";
 @import "foam-cannon/related";
 @import "foam-cannon/search";
-//@import "foam-cannon/normalize";
-//@import "foam-cannon/variables";
+@import "foam-cannon/normalize";
 @import "foam-cannon/media";
 @import "foam-cannon/tag";
 @import "foam-cannon/util";
