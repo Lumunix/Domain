@@ -45,7 +45,7 @@
     }
 
     .textfield__input {
-        border: 1px solid rgba(0,0,0,.12);
+        border: 1px solid $primary-box-shadow-color;
         padding: 4px 5px;
         width: 100%;
         height: 30px;
@@ -56,21 +56,17 @@
         padding: 0.5rem 0;
     }
     .button {
-        background: rgba(158,158,158,.2);
-        box-shadow: 0 2px 2px 2px rgba(0,0,0,.14);
-        border: none;
-        border-radius: 2px;
-        padding: 4px 8px;
+        background-color: $quaternary-bg-color;
+        box-shadow:  0 1px 8px $primary-box-shadow-color;
+        border: 1px solid $secondary-border-color;
+        color: $primary-text-color;
+        padding: 5px 10px;
         overflow: hidden;
         font-size: inherit;
         cursor: pointer;
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
         margin: 4px 0px 0px 0px;
-    }
-    button:hover {
-        //background-color: $brand-color;
-        color: $primary-bg-color;
     }
 
     //
@@ -84,7 +80,7 @@
     }
     .comment__admin_tag {
         font-size: 0.8em;
-        //border-color: $brand-color;
+        //border-color: $primary-border-color;
         border-style: solid;
         border-width: 1px;
         background-color: ld-select(#bfb, #050);
@@ -154,10 +150,10 @@
     margin-top: -150px;
     min-height: 0;
     z-index: 9999;
-    //box-shadow: 2px 2px 2px 2px rgba($brand-color,.5);
+    box-shadow: 0 1px 8px $primary-box-shadow-color;
     padding: 16px;
-    border-radius: 2px;
-    //background: $background-color;
+    //border-radius: 2px;
+    background: $primary-bg-color;
     overflow: hidden;
     box-sizing: border-box;
 }
