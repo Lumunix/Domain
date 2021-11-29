@@ -10,25 +10,8 @@
 
     <div class="textfield">
       <label for="comment-form-message"><h2>Add Comment</h2>
-        <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
+        <textarea class="textfield__area" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
       </label>
-      <link href="/assets/css/vendor/summernote/summernote-lite.min.css" rel="stylesheet">
-      <script src="/assets/js/vendor/summernote/summernote-lite.min.js"></script>
-      <script>
-          $('#comment-form-message').summernote({
-            tabsize: 2,
-            height: 180,
-            toolbar: [
-              ['style', ['style']],
-              ['font', ['bold', 'underline', 'clear']],
-              ['color', ['color']],
-              ['para', ['ul', 'ol', 'paragraph']],
-              ['table', ['table']],
-              ['insert', ['link', 'picture', 'video']],
-              ['view', ['codeview', 'help','redo','undo']]
-            ]
-          });
-        </script>
     </div>
 
     <div class="textfield narrowfield">

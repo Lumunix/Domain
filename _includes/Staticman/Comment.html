@@ -40,7 +40,7 @@
     {%- assign date        = reply.date -%}
     {%- assign message     = reply.message -%}
     {%- assign uid         = reply._id -%}
-    {% include Comment.html is_reply=true uid=uid email=email name=name url=url date=date message=message %}
+    {% include /Staticman/Comment.html is_reply=true uid=uid email=email name=name url=url date=date message=message %}
   {% endfor %}
 
   <hr style="border-top: 1px solid #ccc; background: transparent; margin-bottom: 10px;">
