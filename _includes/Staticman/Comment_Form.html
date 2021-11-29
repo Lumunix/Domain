@@ -10,7 +10,7 @@
 
     <div class="textfield">
       <label for="comment-form-message"><h2>Add Comment</h2>
-        <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)"  rows="6"></textarea>
+        <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" rows="6"></textarea>
       </label>
 
       <!-- suneditor -->
@@ -26,6 +26,7 @@
 
 <script>
   SUNEDITOR.create('comment-form-message', {
+    "placeholder": "Your comment (markdown accepted)",
     codeMirror:CodeMirror,
      buttonList: [
      ['undo', 'redo'],
