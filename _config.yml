@@ -23,59 +23,25 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "lumunix/lumunix.github.io" # GitHub username/repo-name
 
-
 #######################################################################
 # Settings related to the Header and your About page go here,such as
 # your name, site name, profile pic, site tagline, your bio,
 # your social media links etc
 #######################################################################
-
-heading: Foam Cannon
-subheading: # subheading won't work without a tagline,
-          # tagline is mandatory if you want the
-          # suheading to appear. The reason is
-          # having a heading and a subheading looks
-          # ridiculous.
-  enabled: true
-  name: Second Brain / Zettelkasten
-tagline: # subheading won't work without a tagline,
-         # tagline is mandatory if you want the
-         # suheading to appear. The reason is
-         # having a heading and a subheading looks
-         # ridiculous.
-         # Although you can have the tagline without
-         # the subheading to support the main heading
-         # which in this case is 'Knowledge Continuum'
-  enabled: true
-  name: Blast of Knowledge
-copyright:
-  year: 2021
-  msg: Lumunix # This is a mandatory attribute for copyright to be displayed
-
-author: Scree # add your name
-author-img: profile.png # add your photo
-about-author: I am a scream. # add description
-
 user:
-  display: true # setting it to false will remove the header image and bio
-                # Note that user settings come wholesale, it does not have the
-                # granular enabling or disabling as with the 'preferences'
-                # or the site-wide settings.
-  name: Lumunix
-  bio: Software Engineer, Tech Enthusiast
-  email: lumunix@icloud.com
-  photo: /assets/img/profile.png
-  alt_link: lumunix.github.io
-  social: # just leave the field blank or type in null, if you don't have a
-          # particular social media account and it won't appear
-    enabled: true  # turn this to true
+  name: Bagel
+  image: mac.jpg
+  about: Scree I am a software engineer that builds large scale webapps.
+
+  contact: # just leave the field blank or type in null, if you don't have a
     twitter: Lumunix
     github: Lumunix
     youtube: Lumunix
-    linkedin: null
+    linkedin:
     twitch: lumunix
-    facebook: null
+    facebook:
     instagram: lum_unix
+    email: lumunix@icloud.com
 
 
 
@@ -104,7 +70,7 @@ preferences:
   highlighting:
     enabled: true
     color: DAEDFF
-    
+
   backlinks:
     enabled: true
   related:
@@ -128,7 +94,7 @@ preferences:
     siteKey: 6LeLYEYaAAAAAFGdotkfMHnCB3iA1hFY1dJmcoSy
     secret: KMFMK/JphRpu1sXpWls+8HlOsAHT/YV+U4qylPp+mkz4St1WStQGj2ccaJunnpcv3yXAfTh/utP4P9Wa+HuV7xqzkh5BWbYMeZjx9FNC5iVYSsq9QME3/cZnWL3TEDFkYpjBLC2VDmz81cepo3zSdMrGhSgmql6IYoQzgkFa17M=
   comments:
-    system: staticman # false (default), "disqus", "staticman"
+    system: staticman #false (default), "disqus", "staticman"
     disqus:
       shortname: lumunix # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
     staticman:
@@ -171,15 +137,7 @@ defaults:
       content-type: post
 
 
-# Author Settings
-author: Lumunix # add your name
-author-img: david-freeman.jpg # add your photo
-about-author: I am a software engineer that builds large scale webapps. # add description
-social-twitter: Lumunix # add your Twitter handle
-social-facebook: # add your Facebook handle
-social-github: Lumunix # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: lumunix@icloud.com # add your Email address
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
