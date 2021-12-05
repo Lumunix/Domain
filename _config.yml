@@ -11,12 +11,12 @@
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
+
+
+
+#######################################################################
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+#######################################################################
 
 foam_cannon_theme: light #Light(Default), Dark
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,16 +24,13 @@ url: "https://lumunix.github.io" # the base hostname & protocol for your site, e
 repository: "lumunix/lumunix.github.io" # GitHub username/repo-name
 
 #######################################################################
-# Settings related to the Header and your About page go here,such as
-# your name, site name, profile pic, site tagline, your bio,
-# your social media links etc
+# User Settings
 #######################################################################
 user:
   name: Bagel
   image: mac.jpg
   about: Scree I am a software engineer that builds large scale webapps.
-
-  contact: # just leave the field blank or type in null, if you don't have a
+  contact:
     twitter: Lumunix
     github: Lumunix
     youtube: Lumunix
@@ -46,17 +43,11 @@ user:
 
 
 #####################################################################
-# Settings related to your preferences go here, such as the
-# search results, wiki-style-links, sidenotes, marginnotes,
-# transclusion, pagepreview, backlinks, related posts, highlighting,
-# context menu, flashcards, sliding window, wrapping
-# comments, reCaptcha
+# Site Feature Settings
 #####################################################################
 preferences:
   search:
     enabled: true
-    shortcut_hint:
-        enabled: true
   wiki_style_link: # This property handles wiki style links '[['
     enabled: true
   sidenotes:
@@ -102,10 +93,12 @@ preferences:
       branch: "master" # "master"
       staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/lumunix.github.io/master/comments"
 
-encoding: utf-8
 
-# Build settings
-theme: null
+#####################################################################
+# Build Settings
+# plugins, markdown,
+#####################################################################
+encoding: utf-8
 plugins:
   - jekyll-feed
   - jekyll-sitemap
