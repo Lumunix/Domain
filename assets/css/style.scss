@@ -4,5 +4,5 @@
 
 @charset "utf-8";
 
-@import "foam-cannon/themes/{{ site.foam_cannon_theme| default: 'light' }}"; // theme
-@import "foam-cannon";
+@import "domain/skin/{{ site.skin| default: 'light' }}"; // theme
+@import "domain";
