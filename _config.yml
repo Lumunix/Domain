@@ -27,9 +27,9 @@ repository: "lumunix/lumunix.github.io" # GitHub username/repo-name
 # User Settings
 #######################################################################
 user:
-  name: Bagel
-  image: mac.jpg
-  about: Scree I am a software engineer that builds large scale webapps.
+  name: Lumunix
+  image: Icon.png
+  about: Scree, I am a software engineer that specializes in web infrastructure and automation.
   contact:
     twitter: Lumunix
     github: Lumunix
