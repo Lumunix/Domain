@@ -2,9 +2,9 @@
 layout: Post
 title: Getting Started
 date: 2022-01-02
-description: Start here for creating your own Domain.
-thumbnail: getting-started.png
-header: mac.jpg
+thumbnail: welcome-to-domain.png
+header: welcome-to-domain.png
 tags: [Customization, Documentation]
 comments: false
 ---
+Start here for creating your own Domain.
