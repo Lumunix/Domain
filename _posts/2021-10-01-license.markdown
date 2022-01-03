@@ -1,0 +1,10 @@
+---
+layout: Post
+title: License
+date: 2021-10-01
+description: Licensing information for the project.
+thumbnail: welcome-to-domain.png
+header: mac.jpg
+tags: [License, Documentation]
+comments: false
+---
