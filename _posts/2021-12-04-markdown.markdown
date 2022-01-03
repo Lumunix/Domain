@@ -6,6 +6,7 @@ img: i-rest.jpg
 tags: [Markdown, Documentation]
 comments: false
 ---
+This page contains markdown examples to use in your posts.
 
 * TOC
 {:toc}

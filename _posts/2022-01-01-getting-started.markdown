@@ -1,8 +1,10 @@
 ---
 layout: Post
-title: How to customize your _config.yml
+title: Getting Started
 date: 2022-01-02
-img: project-banner.png
+description: Start here for creating your own Domain.
+thumbnail: getting-started.png
+header: mac.jpg
 tags: [Customization, Documentation]
 comments: false
 ---
