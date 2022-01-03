@@ -4,6 +4,6 @@ title: How to customize your _config.yml
 date: 2022-01-02
 description: Customizing yaml to modify your own site.
 img: project-banner.png
-tags: [Welcome, Documentation]
+tags: [Customization, Documentation]
 comments: false
 ---

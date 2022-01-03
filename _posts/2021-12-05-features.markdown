@@ -4,6 +4,6 @@ title: Features
 date: 2021-12-04
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
 img: i-rest.jpg
-tags: [Markdown, Documentation]
+tags: [Features, Documentation]
 comments: false
 ---
