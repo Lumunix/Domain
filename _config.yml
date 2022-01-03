@@ -22,14 +22,14 @@ skin: light #Light(Default), Dark
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "lumunix/lumunix.github.io" # GitHub username/repo-name
-
+analytics: # Google Analytics
 #######################################################################
 # User Settings
 #######################################################################
 user:
-  name: Bagel
-  image: mac.jpg
-  about: Scree I am a software engineer that builds large scale webapps.
+  name: Lumunix
+  image: Icon.png
+  about: Scree, I am a software engineer that specializes in web infrastructure and automation.
   contact:
     twitter: Lumunix
     github: Lumunix
