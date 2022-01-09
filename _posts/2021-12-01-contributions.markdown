@@ -2,8 +2,8 @@
 layout: Post
 title: Contributions
 date: 2021-12-01
-thumbnail: welcome-to-domain.png
-header: mac.jpg
+thumbnail: contributions.png
+header: banner.png
 tags: [Contribution, Documentation]
 comments: false
 ---

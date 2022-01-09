@@ -3,7 +3,7 @@ layout: Post
 title: Welcome To Domain
 date: 2022-01-02
 thumbnail: welcome-to-domain.png
-header: welcome-to-domain.png
+header: banner.png
 tags: [Welcome, Documentation]
 comments: false
 ---

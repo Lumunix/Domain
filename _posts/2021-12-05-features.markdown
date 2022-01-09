@@ -2,8 +2,8 @@
 layout: Post
 title: Features
 date: 2021-12-04
-thumbnail: welcome-to-domain.png
-header: welcome-to-domain.png
+thumbnail: features.png
+header: banner.png
 tags: [Features, Documentation]
 comments: false
 ---

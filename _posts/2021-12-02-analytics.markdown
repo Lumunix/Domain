@@ -2,8 +2,8 @@
 layout: Post
 title: Analytics
 date: 2021-12-02
-thumbnail: welcome-to-domain.png
-header: mac.jpg
+thumbnail: analytics.png
+header: banner.png
 tags: [Analytics, Documentation]
 comments: false
 ---

@@ -2,8 +2,8 @@
 layout: Post
 title: License
 date: 2021-10-01
-thumbnail: welcome-to-domain.png
-header: mac.jpg
+thumbnail: license.png
+header: banner.png
 tags: [License, Documentation]
 comments: false
 ---
