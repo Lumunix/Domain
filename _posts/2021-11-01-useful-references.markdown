@@ -21,3 +21,10 @@ comments: false
 [FontAwesome](https://fontawesome.com)
 
 [Google Analytics](https://analytics.google.com)
+
+
+ [​[​Some::https://analytics.google.com]]
+ [[Notecompletesss::https://analytics.google.com]]
+
+
+[[Notecomplete::https://github.com/rgvr/scratchpad/tree/master/note-complete]]

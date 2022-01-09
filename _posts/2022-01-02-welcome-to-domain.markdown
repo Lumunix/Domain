@@ -9,3 +9,5 @@ comments: false
 ---
 
 Domain - a specified sphere of activity or knowledge, your personal knowledge repository and blog.
+
+[[Getting Started]]
