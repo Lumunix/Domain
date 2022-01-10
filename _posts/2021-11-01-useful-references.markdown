@@ -8,23 +8,16 @@ tags: [References,Documentation]
 comments: false
 ---
 
-[Docker](https://www.docker.com/get-started)
+[[Docker::https://www.docker.com/get-started]]
 
-[Jekyll](https://jekyllrb.com/docs/)
+[[Jekyll::https://jekyllrb.com/docs/]]
 
-[Jquery](https://jquery.com)
+[[Jquery::https://jquery.com]]
 
-[Lunr](https://lunrjs.com)
+[[Lunr::https://lunrjs.com]]
 
-[Katex](https://katex.org)
+[[Katex::https://katex.org]]
 
-[FontAwesome](https://fontawesome.com)
+[[FontAwesome::https://fontawesome.com]]
 
-[Google Analytics](https://analytics.google.com)
-
-
- [​[​Some::https://analytics.google.com]]
- [[Notecompletesss::https://analytics.google.com]]
-
-
-[[Notecomplete::https://github.com/rgvr/scratchpad/tree/master/note-complete]]
+[[Google Analytics::https://analytics.google.com]]
