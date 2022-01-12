@@ -2,16 +2,15 @@
 layout: Post
 title: Welcome To Domain
 date: 2022-01-02
-description: Domain - a specified sphere of activity or knowledge, your personal knowledge repository and blog. # Add post description (optional)
-img: project-banner.png # Add image post (optional)
+thumbnail: welcome-to-domain.png
+header: banner.png
 tags: [Welcome, Documentation]
 comments: false
 ---
 
-* TOC
-{:toc}
+**Domain - a specified sphere of activity or knowledge, your personal knowledge repository and blog.**
+
+Domain, like its definition implies is a collection of information. The design focus of this Jeykll theme was to create a personal wiki and blog, inspiration was draw from the philosophy of [[Zettelkasten::https://zettelkasten.de/posts/overview/zettlekastan]].
 
 
-{:#heading}
-### Headings
----
+[[Getting Started]]

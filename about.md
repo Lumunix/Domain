@@ -26,7 +26,7 @@ permalink: /about/
 
 
 ## About the website
-
+[[**Original Design**<br><img src="/assets/img/computer.png">::lsn]]
 ### Features:
 
 [[***Changelog***<br/>
@@ -42,7 +42,7 @@ permalink: /about/
 \- 16-04-20 Avatar. <br/>
 \- 11-02-20 Related Posts. <br/>
 \- 12-10-19 Searchbar. <br/>
-::rmn]]The original design[[**Original Design**<br><img src="/assets/img/firstdesign.jpg">::lsn]] of this website was a lot more ostentatious than what you see here. As I progressed through the development process of this website, the current design started emerging on its own. For reasons I don't even understand, the current design just started feeling more natural than the one I had in my mind initially. The bare and simple look-n-feel of this site, at least to me, encompasses the essence of all the things I love about the sites I frequently visit --- feed-like structure, previews, search with context, contextual backlinks, sidenotes, etc. I am hopeful that you'll love it too. :)
+::rmn]][[**Original Design**<br><img src="/assets/img/computer.png">::lsn]] of this website was a lot more ostentatious than what you see here. As I progressed through the development process of this website, the current design started emerging on its own. For reasons I don't even understand, the current design just started feeling more natural than the one I had in my mind initially. The bare and simple look-n-feel of this site, at least to me, encompasses the essence of all the things I love about the sites I frequently visit --- feed-like structure, previews, search with context, contextual backlinks, sidenotes, etc. I am hopeful that you'll love it too. :)
 
 - **Page preview** (Move your mouse over the link): [[Lorem ipsum dolor sit amet]]
 - **Transclusion**: Allows you to see a partial view of the contents of the website to the right or the left of the margin.

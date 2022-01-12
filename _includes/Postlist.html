@@ -2,8 +2,8 @@
 {%- if page.layout == "Main" -%}
   {% for post in paginator.posts %}
   <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{post.url}}">
-    {% if post.img %}
-      <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+    {% if post.thumbnail %}
+      <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.thumbnail}})" href="{{post.url | prepend: site.baseurl}}"></a>
     {% else %}
     {% endif %}
     <div class="post-content">
