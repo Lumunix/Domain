@@ -7,7 +7,4 @@ header: banner.png
 tags: [Contribution, Documentation]
 comments: false
 ---
-How to contribute to the project.
-
-
 Contributions are greatly appreciated, please check [Current Issues](https://github.com/Lumunix/Domain/issues) for active feature requests and bug tracking.
