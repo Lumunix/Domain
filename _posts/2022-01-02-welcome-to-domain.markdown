@@ -9,8 +9,11 @@ comments: false
 ---
 
 **Domain - a specified sphere of activity or knowledge, your personal knowledge repository and blog.**
+[[<br><img src="/assets/img/hi.png">::lsn]]
+Domain, like its definition implies is a collection of information. The design focus of this Jeykll theme was to create a personal wiki and blog, inspiration was draw from the philosophy of [[Zettelkasten::https://zettelkasten.de/posts/overview/]].
 
-Domain, like its definition implies is a collection of information. The design focus of this Jeykll theme was to create a personal wiki and blog, inspiration was draw from the philosophy of [[Zettelkasten::https://zettelkasten.de/posts/overview/zettlekastan]].
+
+backlinks, wiki-style links, context menu, page preview, sidenote
 
 
 [[Getting Started]]

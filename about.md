@@ -59,11 +59,3 @@ Some Less know features:
 - Press 'Shift + s' to trigger search
 
 - Click this card[[Memorize me so that you do well in your exams::srs]] looking thing to know how I use my notes. [Hint: SRS]
-
-
-Other Details:
-
-- The site lives on [[Github::https://github.com/rgvr/simply-jekyll]] and is served using Netlify
-- This website is statically generated using Jekyll from a set of Markdown files.
-  - The Jekyll theme can be found on my Github Page, It is called "Simply-Jekyll"
-- Except lunrjs and katex, there are no third party libraries. Discord is an opt-in, I don't use on my [[site::https://rgvr.me]]. I strongly believe in user privacy.
