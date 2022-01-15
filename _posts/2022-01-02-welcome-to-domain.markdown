@@ -12,8 +12,14 @@ comments: false
 [[<br><img src="/assets/img/hi.png">::lsn]]
 Domain, like its definition implies is a collection of information. The design focus of this Jeykll theme was to create a personal wiki and blog, inspiration was draw from the philosophy of [[Zettelkasten::https://zettelkasten.de/posts/overview/]].
 
+Theme features include:
+- Wiki Styled Links: Links can be external links or internal links with auto generated previews.  
+    - Internal Link: [[Welcome To Domain]]
+    - External Link: [[Zettelkasten::https://zettelkasten.de/posts/overview/]]
 
-backlinks, wiki-style links, context menu, page preview, sidenote
 
 
-[[Getting Started]]
+     context menu, page preview, sidenote
+
+
+[[Welcome To Domain]]
