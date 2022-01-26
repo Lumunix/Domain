@@ -9,7 +9,6 @@ comments: false
 ---
 
 **Domain - a specified sphere of activity or knowledge, your personal knowledge repository and blog.**
-[[<br><img src="/assets/img/hi.png">::lsn]]
 Domain, like its definition implies is a collection of information. The design focus of this Jeykll theme was to create a personal wiki and blog, inspiration was draw from the philosophy of [[Zettelkasten::https://zettelkasten.de/posts/overview/]].
 
 Theme features include:
@@ -17,9 +16,8 @@ Theme features include:
     - Internal Link: [[Welcome To Domain]]
     - External Link: [[Zettelkasten::https://zettelkasten.de/posts/overview/]]
 
+- Context Menu: on main feed that shows linked and related posts.
 
+- SideNotes: Images, transclusions, excepts or just random thoughts can be added in the left and right side margins. These components are also responsive.[[<br><img src="/assets/img/hi.png">::lsn]]
 
-     context menu, page preview, sidenote
-
-
-[[Welcome To Domain]]
+- Comment Systems: Multiple comment systems available, please see the [[Comment Systems]] post for additional documentation.
