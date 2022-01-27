@@ -106,7 +106,6 @@ plugins:
   - jekyll-tidy
   - jekyll-paginate
 
-
 markdown: kramdown
 paginate: 8
 paginate_path: "/page/:num"
