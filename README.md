@@ -22,5 +22,3 @@ docker-compose up
 ## License
 
 Distributed under the [MIT License](http://opensource.org/licenses/MIT). You can use this project however you see fit without needing to give attribution.
-
-See `LICENSE` for more information.
