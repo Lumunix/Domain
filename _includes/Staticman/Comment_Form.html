@@ -7,11 +7,27 @@
   <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.preferences.reCaptcha.siteKey }}">
   <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.preferences.reCaptcha.secret }}">
   {% endif %}
-
     <div class="textfield">
       <label for="comment-form-message"><h2>Add Comment</h2>
-        <textarea class="textfield__area" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
+        <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
       </label>
+      <link href="/assets/vendor/summernote/summernote-lite.min.css" rel="stylesheet">
+      <script src="/assets/vendor/summernote/summernote-lite.min.js"></script>
+      <script>
+          $('#comment-form-message').summernote({
+            tabsize: 2,
+            height: 120,
+            toolbar: [
+              ['style', ['style']],
+              ['font', ['bold', 'underline', 'clear']],
+              ['color', ['color']],
+              ['para', ['ul', 'ol', 'paragraph']],
+              ['table', ['table']],
+              ['insert', ['link', 'picture', 'video']],
+              ['view', ['codeview', 'help','redo','undo']]
+            ]
+          });
+        </script>
     </div>
 
     <div class="textfield narrowfield">
