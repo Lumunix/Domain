@@ -1,4 +1,4 @@
-
+<div class="card--group" id="card-wrapper">
 {%- if page.layout == "Main" -%}
   {% for post in paginator.posts %}
   <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{post.url}}">
@@ -16,3 +16,4 @@
   </article>
   {% endfor %}
 {%- endif -%}
+</div>

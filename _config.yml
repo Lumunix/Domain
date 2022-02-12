@@ -107,7 +107,7 @@ plugins:
   - jekyll-paginate
 
 markdown: kramdown
-paginate: 8
+paginate: 5
 paginate_path: "/page/:num"
 
 kramdown:
