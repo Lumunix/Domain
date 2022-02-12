@@ -34,7 +34,8 @@
 </div>
 
 <script>
-    var postWrapperId = 'card-wrapper';
+    var postWrapperId = 'post-wrapper';
     var paginatePath = '/page/'
-    new InfiniteScroll(paginatePath, postWrapperId);
+    var pTotal = {{paginator.total_pages}};
+    new InfiniteScroll(paginatePath, postWrapperId,pTotal);
 </script>

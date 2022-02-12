@@ -1,8 +1,9 @@
 class InfiniteScroll {
-    constructor (path, wrapperId) {
-        if (path === undefined || wrapperId === undefined) throw Error ('no parameter.');
+    constructor (path, wrapperId, pTotal) {
+        if (path === undefined || wrapperId === undefined || pTotal === undefined) throw Error ('no parameter.');
         this.path = path;
         this.pNum = 2;
+        this.pTotal = pTotal;
         this.wNode = document.getElementById(wrapperId);
         this.wrapperId = wrapperId;
         this.enable = true;
@@ -12,8 +13,10 @@ class InfiniteScroll {
 
     detectScroll() {
         window.onscroll = (ev) => {
-            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight)
-                this.getNewPost();
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight){
+                if(this.pNum <= this.pTotal )
+                    this.getNewPost();
+            }
         };
     }
     getNewPost() {
