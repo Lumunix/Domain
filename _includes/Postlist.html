@@ -1,6 +1,5 @@
 <div id="post-wrapper">
-{%- if page.layout == "Main" -%}
-  {% for post in paginator.posts %}
+{% for post in paginator.posts %}
   <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{post.url}}">
     {% if post.thumbnail %}
       <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.thumbnail}})" href="{{post.url | prepend: site.baseurl}}"></a>
@@ -14,6 +13,14 @@
 
     </div>
   </article>
-  {% endfor %}
-{%- endif -%}
+{% endfor %}
 </div>
+
+{% case site.preferences.pagination.system %}
+  {% when "infinitescroll" %}
+    {% include InfiniteScroll.html %}
+  {% when "pagination" %}
+    {% include Pagination.html %}
+  {% else %}
+    {% include InfiniteScroll.html %}
+{% endcase %}

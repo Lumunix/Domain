@@ -1,0 +1,7 @@
+<script src='/assets/vendor/infinitescroll/InfiniteScroll.js'></script>
+<script>
+    var postWrapperId = 'post-wrapper';
+    var paginatePath = '/page/'
+    var pTotal = {{paginator.total_pages}};
+    new InfiniteScroll(paginatePath, postWrapperId,pTotal);
+</script>
