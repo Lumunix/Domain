@@ -21,3 +21,25 @@
 @import "domain/media";
 @import "domain/tag";
 @import "domain/util";
+
+
+
+figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.lineno {
+  color: #ccc;
+  display:inline-block;
+  padding: 0 5px;
+  border-right:1px solid #ccc;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
