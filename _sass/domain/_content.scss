@@ -373,6 +373,8 @@ hr {
 
 .copy-code-button {
   display: grid;
+  margin:0px 0px -15px 0px;
+  background-color: $secondary-bg-color;
   grid-auto-flow: column;
   align-items: center;
   grid-column-gap: 4px;
