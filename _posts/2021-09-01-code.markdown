@@ -8,7 +8,7 @@ tags: [References,Documentation]
 comments: false
 ---
 
-
+{% include codeHeader.html %}
 ```javascript
 function sayHello(name) {
   if (!name) {
@@ -19,6 +19,7 @@ function sayHello(name) {
 }
 ```
 
+{% include codeHeader.html %}
 ```java
 // This is a extreme line comment to test how long it goes without a word wrap and it goes and goes and goes and goes and goes and goes
 

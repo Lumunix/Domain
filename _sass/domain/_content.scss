@@ -218,6 +218,8 @@ code {
   font-family: Consolas, 'Courier New', Courier, monospace;
   display: inline-block;
   overflow: auto !important;
+  white-space: pre-wrap !important;
+  width: 100%;
   word-wrap: break-word !important;
   padding: 2px;
   vertical-align: middle;
@@ -246,10 +248,11 @@ pre code {
   font-family: Consolas, 'Courier New', Courier, monospace;
   display: inline-block;
   overflow: auto !important;
+  white-space: pre-wrap !important;
   word-wrap: break-word !important;
   padding: 15px;
   vertical-align: middle;
-  width: 90%;
+  width: 100%;
   background-color: $secondary-bg-color;
   border: 1px solid $secondary-border-color;
   border-radius: 5px;
@@ -360,5 +363,41 @@ hr {
   .page-image {
     width: 100%;
     height: 100%;
+  }
+}
+
+.code-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copy-code-button {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-column-gap: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 8px;
+
+  &::before {
+    content: "Copy";
+  }
+
+  &::after {
+    content: "📋";
+    display: block;
+  }
+
+  // This class will be toggled via JavaScript
+  &.copied {
+    &::before {
+      content: "Copied!";
+    }
+
+    &::after {
+      content: "✔️";
+    }
   }
 }
