@@ -1,0 +1,45 @@
+---
+layout: Post
+title: Mermaid
+date: 2021-10-04
+thumbnail: useful-references.png
+header: banner.png
+tags: [References,Documentation]
+comments: false
+---
+<div class="mermaid"> graph TD; A-->B; A-->C; B-->D; C-->D; </div>
+
+
+<div class="mermaid">
+graph TD
+    A{Does your flowchart have arrows?} --> B[No]
+    A --> C[yes]
+    B --> D(Add them already)
+    C --> E(Yay, what a great flowchart!)
+    D -.->|you can even add text to them| A
+    </div>
+{% include codeHeader.html %}
+```javascript
+function sayHello(name) {
+  if (!name) {
+    console.log('Hello World');
+  } else {
+    console.log(`Hello ${name}`);
+  }
+}
+```
+
+{% include codeHeader.html %}
+```java
+// This is a extreme line comment to test how long it goes without a word wrap and it goes and goes and goes and goes and goes and goes
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+```html
+<p>Here's some HTML for you.</p>
+```
