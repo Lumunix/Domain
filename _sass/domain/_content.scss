@@ -402,4 +402,7 @@ hr {
       content: "✔️";
     }
   }
+  &:hover {
+       background-color: $quaternary-bg-color;
+  }
 }
