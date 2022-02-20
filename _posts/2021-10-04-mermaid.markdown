@@ -1,0 +1,35 @@
+---
+layout: Post
+title: Mermaid
+author: lumunix
+date: 2021-10-04
+thumbnail: useful-references.png
+header: banner.png
+tags: [References,Documentation]
+comments: false
+---
+<div class="mermaid"> graph TD; A-->B; A-->C; B-->D; C-->D; </div>
+
+
+<div class="mermaid">
+graph TD
+    A{Does your flowchart have arrows?} --> B[No]
+    A --> C[yes]
+    B --> D(Add them already)
+    C --> E(Yay, what a great flowchart!)
+    D -.->|you can even add text to them| A
+</div>
+
+
+
+<div class="mermaid">
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+</div>

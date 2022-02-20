@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: License
+author: lumunix
 date: 2021-10-01
 thumbnail: license.png
 header: banner.png

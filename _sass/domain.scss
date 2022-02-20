@@ -1,6 +1,6 @@
 /*!
- * Foam-Cannon Jekyll Theme
- * Copyright 2021 Lumunix
+ * Domain Jekyll Theme
+ * Copyright 2022 Lumunix
  * Licensed under MIT
 */
 
@@ -10,6 +10,7 @@
 @import "domain/main";
 @import "domain/footer";
 @import "domain/content";
+@import "domain/codecopy";
 @import "domain/pagination";
 @import "domain/sidenote";
 @import "domain/contextmenu";
@@ -21,3 +22,4 @@
 @import "domain/media";
 @import "domain/tag";
 @import "domain/util";
+@import "domain/author";

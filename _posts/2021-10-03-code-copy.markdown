@@ -1,0 +1,36 @@
+---
+layout: Post
+title: Code Copy
+author: lumunix
+date: 2021-10-03
+thumbnail: useful-references.png
+header: banner.png
+tags: [References,Documentation]
+comments: false
+---
+
+{% include codeHeader.html %}
+```javascript
+function sayHello(name) {
+  if (!name) {
+    console.log('Hello World');
+  } else {
+    console.log(`Hello ${name}`);
+  }
+}
+```
+
+{% include codeHeader.html %}
+```java
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+{% include codeHeader.html %}
+```html
+<p>Here's some HTML for you.</p>
+```

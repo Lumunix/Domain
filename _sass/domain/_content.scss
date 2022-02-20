@@ -218,7 +218,8 @@ code {
   font-family: Consolas, 'Courier New', Courier, monospace;
   display: inline-block;
   overflow: auto !important;
-  white-space: pre-line !important;
+  white-space: pre-wrap !important;
+  width: 100%;
   word-wrap: break-word !important;
   padding: 2px;
   vertical-align: middle;
@@ -247,11 +248,11 @@ pre code {
   font-family: Consolas, 'Courier New', Courier, monospace;
   display: inline-block;
   overflow: auto !important;
-  white-space: pre-line !important;
+  white-space: pre-wrap !important;
   word-wrap: break-word !important;
   padding: 15px;
   vertical-align: middle;
-  width: 90%;
+  width: 100%;
   background-color: $secondary-bg-color;
   border: 1px solid $secondary-border-color;
   border-radius: 5px;

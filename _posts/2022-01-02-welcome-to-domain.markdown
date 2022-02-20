@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Welcome To Domain
+author: lumunix
 date: 2022-01-02
 thumbnail: welcome-to-domain.png
 header: banner.png

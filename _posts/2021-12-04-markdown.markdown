@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Markdown
+author: lumunix
 date: 2021-12-04
 thumbnail: markdown.png
 header: banner.png

@@ -30,13 +30,13 @@ user:
   name: Lumunix
   image: Icon.png
   about: Scree, I am a software engineer that specializes in automation.
-  contact:
+  social:
     twitter: Lumunix
     github: Lumunix
     youtube: Lumunix
-    linkedin:
+    linkedin: blah
     twitch: lumunix
-    facebook:
+    facebook: blah
     instagram: lum_unix
     email: lumunix@icloud.com
 
@@ -46,6 +46,8 @@ user:
 # Site Feature Settings
 #####################################################################
 preferences:
+  author:
+    enabled: true
   search:
     enabled: true
   wiki_style_link: # This property handles wiki style links '[['
@@ -109,7 +111,7 @@ plugins:
   - jekyll-paginate
 
 markdown: kramdown
-paginate: 5
+paginate: 6
 paginate_path: "/page/:num"
 
 kramdown:
@@ -131,7 +133,24 @@ defaults:
       permalink: /posts/:title
       content-type: post
 
+#####################################################################
+# Post Authors
+#####################################################################
 
+authors:
+  lumunix:
+    name: Lumunix
+    image: Icon.png
+    about: Full Time Fennec
+    social:
+      twitter: Lumunix
+      github: Lumunix
+      youtube: Lumunix
+      linkedin: blah
+      twitch: lumunix
+      facebook: blah
+      instagram: lum_unix
+      email: lumunix@icloud.com
 
 # Exclude from processing.
 # The following items will not be processed, by default.

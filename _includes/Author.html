@@ -1,0 +1,31 @@
+<div class="author">
+
+  <h2>Author</h2>
+  <div class="author-image">
+    <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if author.image %}{{author.image}}{% endif %}" alt="{{site.user.name}}"></a>
+  </div>
+  <div class="author-name">{{author.name}}</div>
+  <p>{{author.about}}</p>
+
+  <div id="author-social">
+    <section class="social">
+      <ul>
+        {% if author.social.twitter %}
+        <li><a href="https://twitter.com/{{ author.social.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if author.social.facebook %}
+        <li><a href="https://facebook.com/{{ author.social.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if author.social.github %}
+        <li class="github"><a href="http://github.com/{{author.social.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% endif %}
+        {% if author.social.linkedin %}
+        <li class="linkedin"><a href="https://in.linkedin.com/in/{{author.social.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        {% endif %}
+        {% if author.social.email %}
+        <li class="email"><a href="mailto:{{author.social.email}}"><i class="fa fa-envelope-o"></i></a></li>
+        {% endif %}
+        </ul>
+    </section>
+  </div>
+</div>
