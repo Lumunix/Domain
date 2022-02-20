@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Code Copy
+author: lumunix
 date: 2021-10-03
 thumbnail: useful-references.png
 header: banner.png

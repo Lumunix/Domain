@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Analytics
+author: lumunix
 date: 2021-12-02
 thumbnail: analytics.png
 header: banner.png

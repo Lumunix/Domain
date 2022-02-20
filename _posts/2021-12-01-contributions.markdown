@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Contributions
+author: lumunix
 date: 2021-12-01
 thumbnail: contributions.png
 header: banner.png
