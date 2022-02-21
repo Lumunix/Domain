@@ -55,7 +55,7 @@ Theme features include:
 
 - **RSS Feed**: Allows users to keep up to date with your posts!
 
-- **Highlighting** :highlighting can be used on pieces of text to draw attention.
+- **Highlighting**: highlighting can be used on pieces of text to draw attention.
 
   - **Examples**
 

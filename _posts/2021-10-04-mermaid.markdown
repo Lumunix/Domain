@@ -14,7 +14,6 @@ See complete syntax and more examples[[here:https://github.com/mermaid-js/mermai
 
 <div class="mermaid"> graph TD; A-->B; A-->C; B-->D; C-->D; </div>
 
-
 <div class="mermaid">
 graph TD
     A{Does your flowchart have arrows?} --> B[No]
@@ -23,8 +22,6 @@ graph TD
     C --> E(Yay, what a great flowchart!)
     D -.->|you can even add text to them| A
 </div>
-
-
 
 <div class="mermaid">
 sequenceDiagram
