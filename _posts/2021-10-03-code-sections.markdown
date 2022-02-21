@@ -3,8 +3,7 @@ layout: Post
 title: Code Sections
 author: lumunix
 date: 2021-10-03
-thumbnail: useful-references.png
-header: banner.png
+thumbnail: codesections.png
 tags: [References,Documentation]
 comments: false
 ---

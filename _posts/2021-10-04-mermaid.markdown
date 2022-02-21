@@ -3,8 +3,7 @@ layout: Post
 title: Mermaid
 author: lumunix
 date: 2021-10-04
-thumbnail: useful-references.png
-header: banner.png
+thumbnail: mermaid.png
 tags: [References,Documentation]
 comments: false
 ---
