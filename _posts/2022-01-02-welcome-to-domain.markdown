@@ -63,3 +63,12 @@ Theme features include:
   > **Raw Syntax:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. **[​[**Phasellus mollis lectus id efficitur mollis.**::highlight]]** Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
   >
   > **Rendered Text:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. [[Phasellus mollis lectus id efficitur mollis.::highlight]] Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
+
+- **Code Syntax Highlighting / Code Copy** : [[Code Sections]] with full syntax highlighting with support for many popular programming languages and allow users to easily copy sections with one clip copy to clipboard functionality.
+
+{% include codeHeader.html %}
+```html
+<p>Here's some HTML for you.</p>
+```
+
+- **Mermaid Diagrams** : This theme has [[Mermaid]] to create class diagrams, interaction diagrams, sequence diagrams and more.
