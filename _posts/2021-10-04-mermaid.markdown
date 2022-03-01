@@ -4,24 +4,12 @@ title: Mermaid
 author: lumunix
 date: 2021-10-04
 thumbnail: mermaid.png
-tags: [References,Documentation]
+tags: [Graphs,Documentation]
 comments: false
 ---
 Mermaid is a Javascript based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. The main purpose of Mermaid is to help documentation catch up with development
 
-See complete syntax and more examples[[here:https://github.com/mermaid-js/mermaid]]
-
-
-<div class="mermaid"> graph TD; A-->B; A-->C; B-->D; C-->D; </div>
-
-<div class="mermaid">
-graph TD
-    A{Does your flowchart have arrows?} --> B[No]
-    A --> C[yes]
-    B --> D(Add them already)
-    C --> E(Yay, what a great flowchart!)
-    D -.->|you can even add text to them| A
-</div>
+See complete syntax and more examples [[here::https://github.com/mermaid-js/mermaid]]
 
 <div class="mermaid">
 sequenceDiagram
