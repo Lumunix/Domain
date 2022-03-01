@@ -1,6 +1,6 @@
 ---
 layout: Post
-title: Code Copy
+title: Code Sections
 author: lumunix
 date: 2021-10-03
 thumbnail: useful-references.png
