@@ -70,4 +70,6 @@ Theme features include:
 <p>Here's some HTML for you.</p>
 ```
 
-- **Mermaid Diagrams** : This theme has [[Mermaid]] to create class diagrams, interaction diagrams, sequence diagrams and more.
+- **Mermaid Diagrams** : [[Mermaid]] can be used to create class diagrams, interaction diagrams, sequence diagrams and more.
+
+- **Multiple Authors Support** : Multiple [[Authors]] are supported, perfect for hosting guest articles or being part of a larger wiki.

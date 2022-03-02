@@ -3,7 +3,31 @@ layout: Post
 title: Authors
 author: lumunix
 date: 2021-10-03
-thumbnail: codesections.png
+thumbnail: authors.png
 tags: [References,Documentation]
 comments: false
 ---
+
+
+```
+---
+author: lumunix
+---
+```
+
+```
+authors:
+  lumunix:
+    name: Lumunix
+    image: Icon.png
+    about: Full Time Fennec
+    social:
+      twitter: Lumunix
+      github: Lumunix
+      youtube: Lumunix
+      linkedin: blah
+      twitch: lumunix
+      facebook: blah
+      instagram: lum_unix
+      email: lumunix@icloud.com
+```
