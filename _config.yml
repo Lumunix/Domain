@@ -19,7 +19,7 @@
 #######################################################################
 
 skin: light #Light(Default), Dark
-baseurl: "/Domain" # the subpath of your site, e.g. /blog
+baseurl: "https://lumunix.github.io/Domain" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io/Domain/" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "lumunix/Domain" # GitHub username/repo-name
 analytics: G-B52EHKF77Y # Google Analytics
