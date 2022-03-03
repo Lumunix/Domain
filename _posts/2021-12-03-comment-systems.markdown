@@ -4,12 +4,9 @@ title: Comment Systems
 author: lumunix
 date: 2021-12-03
 thumbnail: comment-systems.png
-header: banner.png
 tags: [Comments, Documentation]
 comments: true
 ---
-Domain has two comment systems available. You can choose either [][Disqus]](https://disqus.com) or [][Staticman]](https://github.com/eduardoboucas/staticman) comments.
-
 
 # Staticman Comments
 [Staticman](https://github.com/eduardoboucas/staticman) API, which allows for the integration of comments into static web pages. Note that this comment system requires that you to configure your own staticman instance, please see documentation [[here]](https://github.com/eduardoboucas/staticman#setting-up-the-server-on-your-own-infrastructure) then complete the following steps.

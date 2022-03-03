@@ -3,9 +3,8 @@ layout: Post
 title: Code Sections
 author: lumunix
 date: 2021-10-03
-thumbnail: useful-references.png
-header: banner.png
-tags: [References,Documentation]
+thumbnail: codesections.png
+tags: [Code,Documentation]
 comments: false
 ---
 This page has examples of syntax highlighting in different languages, as well as the code copy header that can be applied to code sections that allows readers to quickly copy the code snippet to the clipboard (come on everyone has copy and pasted code from the internet every once in awhile)

@@ -4,7 +4,6 @@ title: Welcome To Domain
 author: lumunix
 date: 2022-01-02
 thumbnail: welcome-to-domain.png
-header: banner.png
 tags: [Welcome, Documentation]
 comments: false
 ---
@@ -56,7 +55,7 @@ Theme features include:
 
 - **RSS Feed**: Allows users to keep up to date with your posts!
 
-- **Highlighting** :highlighting can be used on pieces of text to draw attention.
+- **Highlighting**: highlighting can be used on pieces of text to draw attention.
 
   - **Examples**
 
@@ -71,4 +70,6 @@ Theme features include:
 <p>Here's some HTML for you.</p>
 ```
 
-- **Mermaid Diagrams** : This theme has [[Mermaid]] to create class diagrams, interaction diagrams, sequence diagrams and more.
+- **Mermaid Diagrams** : [[Mermaid]] can be used to create class diagrams, interaction diagrams, sequence diagrams and more.
+
+- **Multiple Authors Support** : Multiple [[Authors]] are supported, perfect for hosting guest articles or being part of a larger wiki.
