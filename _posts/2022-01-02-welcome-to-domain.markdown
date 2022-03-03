@@ -65,7 +65,7 @@ Theme features include:
 
 - **Code Syntax Highlighting / Code Copy** : [[Code Sections]] with full syntax highlighting with support for many popular programming languages and allow users to easily copy sections with one clip copy to clipboard functionality.
 
-{% include codeHeader.html %}
+{% include CodeHeader.html %}
 ```html
 <p>Here's some HTML for you.</p>
 ```
