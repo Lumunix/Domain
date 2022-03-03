@@ -10,7 +10,7 @@ comments: false
 This page has examples of syntax highlighting in different languages, as well as the code copy header that can be applied to code sections that allows readers to quickly copy the code snippet to the clipboard (come on everyone has copy and pasted code from the internet every once in awhile)
 
 
-{% include codeHeader.html %}
+{% include CodeHeader.html %}
 ```javascript
 function sayHello(name) {
   if (!name) {
@@ -21,7 +21,7 @@ function sayHello(name) {
 }
 ```
 
-{% include codeHeader.html %}
+{% include CodeHeader.html %}
 ```java
 
 class HelloWorld {
@@ -31,7 +31,7 @@ class HelloWorld {
 }
 ```
 
-{% include codeHeader.html %}
+{% include CodeHeader.html %}
 ```html
 <p>Here's some HTML for you.</p>
 ```
