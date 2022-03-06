@@ -79,15 +79,16 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="{{ "/assets/vendor/font-awesome/font-awesome.min.css" | prepend: site.baseurl }}">
+	{{site.baseurl}}
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/vendor/font-awesome/font-awesome.min.css">
 	<!-- Styles -->
-	<link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
 	<!-- Katex -->
-	<link href="{{ "/assets/vendor/katex/Katex.css" | prepend: site.baseurl }}" rel="stylesheet" media="all" class="default"/>
+	<link href="{{site.baseurl}}/assets/vendor/katex/Katex.css" rel="stylesheet" media="all" class="default"/>
 	<!-- RSS -->
 	<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 	<!-- Jquery -->
-	<script type="text/javascript" src="{{ "/assets/vendor/jquery/jquery-3.5.1.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{site.baseurl}}/assets/vendor/jquery/jquery-3.5.1.js"></script>
 	<!-- Mermaid -->
-	<script src="{{ "/assets/vendor/mermaid/mermaid.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{site.baseurl}}/assets/vendor/mermaid/mermaid.min.js"></script>
 </head>
