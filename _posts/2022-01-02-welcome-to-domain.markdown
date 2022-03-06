@@ -18,7 +18,7 @@ Theme features include:
 
 - **Context Menu**: on main feed that shows linked and related posts.
 
-- **SideNotes**: Images, transclusions, excepts or just random thoughts can be added in the left and right side margins. These components are also responsive.[[<br><img src="/assets/img/hi.png">::lsn]]
+- **SideNotes**: Images, transclusions, excepts or just random thoughts can be added in the left and right side margins. These components are also responsive.[[<br><img src="{{site.baseurl}}/assets/img/hi.png">::lsn]]
 
 
     - **SideNote:** **[​[**Some Text**::keyword-of-the-type-of-the-sidenote/marginote/transclusion]]**
