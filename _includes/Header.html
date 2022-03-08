@@ -73,7 +73,7 @@
           <path d="M21.5 21.5L17.15 17.15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <label for="search-input"></label>
-        <input type="text" id="search-input" autocomplete="off" placeholder="Search {{site.heading}}..."/>
+        <input type="text" id="search-input" jsondata="{{site.baseurl}}/assets/js/SearchData.json" autocomplete="off" placeholder="Search {{site.heading}}..."/>
         <div id="search-results" class="search-results"></div>
     </div>
     <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/lunr/lunr.min.js"></script>
