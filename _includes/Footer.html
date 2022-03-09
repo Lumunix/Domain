@@ -6,9 +6,11 @@
 </div>
 {% if site.preferences.author.enabled %}
 {% assign author = site.authors[page.author] %}
-{% include  Author.html %}
+  {% if page.author %}
+    {% include  Author.html %}
+  {% endif %}
 {% endif %}
 
 {% if page.comments %}
-{%- include Comments.html -%}
+  {%- include Comments.html -%}
 {% endif %}
