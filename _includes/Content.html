@@ -8,11 +8,7 @@
       <li><a href="{{site.baseurl}}/posts/#{{ page.date | date: '%d-%B-%Y' }}" class="tag">{{ page.date | date: '%B-%d-%Y' }}</a></li>
       <!-- Loop through page categories and print them in tags -->
       {%- for tag in page.tags -%}
-          {%- if tag == 'Favorite' -%}
-          <li><a href="{{site.baseurl}}/favorites/" class="tag">{{ tag }}</a></li>
-          {%- else -%}
-          <li><a href="{{site.baseurl}}/tags/#{{ tag }}" class="tag">{{ tag }}</a></li>
-          {%- endif -%}
+      <li><a href="{{site.baseurl}}/tags/#{{ tag }}" class="tag">{{ tag }}</a></li>
       {%- endfor -%}
   </ul>
   {%- endif -%}
