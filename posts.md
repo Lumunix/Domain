@@ -10,7 +10,7 @@ permalink: /posts/
       {% for day in postsByDay %}
         <h2 id="{{ day.name }}">{{ day.name }}</h2>
             {% for post in day.items %}
-              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.url }}">{{ post.title }}</a></li>
+              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
       {% endfor %}
 

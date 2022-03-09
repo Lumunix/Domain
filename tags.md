@@ -20,7 +20,7 @@ permalink: /tags/
   <!--  lists all posts corresponding to specific tag...-->
       {% for post in site.tags[this_word] %}{% if post.title != null %}
 
-      <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.url }}">{{ post.title }}</a>
+      <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
         <small><span>| {{ post.date | date_to_string }}</span></small>
       </li>
 
