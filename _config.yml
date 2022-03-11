@@ -96,7 +96,7 @@ preferences:
     staticman:
       #See additional options in staticman.yml
       branch: "master" # "master"
-      staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/lumunix.github.io/master/comments"
+      staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/Domain/main/comments"
 
 
 #####################################################################
@@ -117,7 +117,6 @@ paginate_path: "/page/:num"
 kramdown:
   input: GFM
   hard_wrap: false
-  math_engine: katex
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
 
