@@ -95,7 +95,7 @@ preferences:
       shortname: lumunix # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
     staticman:
       #See additional options in staticman.yml
-      branch: "master" # "master"
+      branch: "main" # "master"
       staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/Domain/main/comments"
 
 
