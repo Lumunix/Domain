@@ -1,5 +1,5 @@
 ---
-layout: Blank
+layout: Page
 title: Tags
 permalink: /tags/
 ---
