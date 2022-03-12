@@ -51,7 +51,7 @@
 }
 
   .content-box {
-    padding: 20px 0px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@
   }
 
   .content-header {
-    padding: 20px 0px;
+    padding: 20px 10px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
@@ -74,14 +74,14 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   .content-box {
-    padding: 0px;
+    padding: 10px;
   }
   .content-header {
-    padding: 0px;
+    padding: 10px;
   }
   .post {
     max-width: 100%;
-    margin: 0%;
+    margin: 2%;
     flex-direction: column;
 
     .post-thumbnail {
