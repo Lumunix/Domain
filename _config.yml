@@ -96,8 +96,7 @@ preferences:
     staticman:
       #See additional options in staticman.yml
       branch: "main" # "main"
-      staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/lumunix.github.io/Domain/main/comments"
-
+      staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/Domain/main/comments"
 
 #####################################################################
 # Build Settings
