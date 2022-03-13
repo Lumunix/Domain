@@ -3,7 +3,7 @@
 ![Project-Banner](/readme/project-banner.png)
 
 ## About
-Jeykll Knowledge Base / Blog Theme that provides wiki style linking, full text search and automatically generated post organization pages.
+Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text search and automatically generated post organization pages.
 
 ## Usage
 
