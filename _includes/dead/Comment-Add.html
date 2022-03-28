@@ -12,16 +12,6 @@
   {% endif %}
 
 
-  <div class="textfield narrowfield">
-    <label for="comment-form-name"><h3>Name</h3></label>
-    <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
-
-  </div>
-
-  <div class="textfield narrowfield">
-    <label for="comment-form-email"><h3>E-mail</h3></label>
-    <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional)"/>
-  </div>
 
     {% case site.skin %}
       {% when "light" %}
@@ -32,11 +22,16 @@
       </div>
     {% endcase %}
 
-    <script>
-        $('#comment-form-message-add').trumbowyg();
-    </script>
+      <div class="textfield narrowfield">
+        <label for="comment-form-name"><h3>Name</h3></label>
+        <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
 
+      </div>
 
+      <div class="textfield narrowfield">
+        <label for="comment-form-email"><h3>E-mail</h3></label>
+        <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional)"/>
+      </div>
 
     {% if site.preferences.reCaptcha.enabled %}
     <div id="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.preferences.reCaptcha.siteKey }}"></div>
