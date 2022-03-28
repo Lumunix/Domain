@@ -4,6 +4,7 @@
     {% when "disqus" %}
       {% include /Disqus/Disqus.html %}
     {% when "staticman" %}
-      {% include /Staticman/Staticman.html %}
+    {% include /dead/Comments.html replies_to=page.url %}
+    {% include /dead/Comment-Add.html reply_to=page.url %}
   {% endcase %}
 </div>
