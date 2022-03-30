@@ -17,9 +17,9 @@
             <span class="article-comment-footer">by {{ com.author | escape | strip_newlines }}&nbsp;|&nbsp;</span>
             <details>
                 <summary class="article-comment-footer">Reply</summary>
-                {%- include comment-form.html reply_to=cid -%}
+                {%- include /Staticman/Comment-Form.html reply_to=cid -%}
             </details>
-            {%- include comments.html replies_to=cid -%}
+            {%- include /Staticman/Comments.html replies_to=cid -%}
         </div>
     </div>
 {%- endfor -%}
