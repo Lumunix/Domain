@@ -28,22 +28,22 @@ Width: 100%;
   }
 }
 
-#profile-card {
+#about-card {
     text-align: center;
     #author-img{
         text-align: center;
     }
-    .profile-img {
+    .about-img {
         width: 150px;
         height: 150px;
         margin-left: 20px;
         border-radius: 50%;
     }
-    .profile-name {
+    .about-name {
         margin-top: 20px;
     }
-    .profile-bio,
-    .profile-links {
+    .about-bio,
+    .about-links {
         margin-top: 5px;
     }
     .social-link {
@@ -73,23 +73,17 @@ Width: 100%;
     padding: 20px !important;
 }
 
-/* Github Follow Button */
-.widget-lg .btn, .widget-lg .social-count {
-   height: 35px !important;
-   padding: 10px 30px 1px !important;
-   font-size: 15px !important;
-   line-height: 20px !important;
-}
+
 </style>
 
 <div class="columns">
    <div class="column column-1">
-   <div class="card" id="profile-card">
+   <div class="card" id="about-card">
      <a>
-       <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.user.image }}" class="profile-img" />
+       <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.user.image }}" class="about-img" />
      </a>
-     <h1 class="profile-name">{{ site.user.name }}</h1>
-     <p class="profile-bio">{{ site.user.about }}</p>
+     <h1 class="about-name">{{ site.user.name }}</h1>
+     <p class="about-bio">{{ site.user.about }}</p>
      {% if site.user.social.github %} {%- include GithubFollowButton.html -%} {%
      endif %}
 
