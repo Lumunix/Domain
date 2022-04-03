@@ -80,29 +80,29 @@ Width: 100%;
    <div class="column column-1">
    <div class="card" id="about-card">
      <a>
-       <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.user.image }}" class="about-img" />
+       <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.about.image }}" class="about-img" />
      </a>
-     <h1 class="about-name">{{ site.user.name }}</h1>
-     <p class="about-bio">{{ site.user.about }}</p>
-     {% if site.user.social.github %} {%- include GithubFollowButton.html -%} {%
+     <h1 class="about-name">{{ site.about.name }}</h1>
+     <p class="about-bio">{{ site.about.bio }}</p>
+     {% if site.about.social.github %} {%- include GithubFollowButton.html -%} {%
      endif %}
 
      <section class="social">
        <ul>
-         {% if site.user.social.twitter %}
-           <li><a href="https://twitter.com/{{ site.user.social.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+         {% if site.about.social.twitter %}
+           <li><a href="https://twitter.com/{{ site.about.social.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
          {% endif %}
-         {% if site.user.social.facebook %}
-           <li><a href="https://facebook.com/{{ site.user.social.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+         {% if site.about.social.facebook %}
+           <li><a href="https://facebook.com/{{ site.about.social.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
          {% endif %}
-         {% if site.user.social.github %}
-           <li class="github"><a href="http://github.com/{{site.user.social.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+         {% if site.about.social.github %}
+           <li class="github"><a href="http://github.com/{{site.about.social.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
          {% endif %}
-         {% if site.user.social.linkedin %}
-           <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.user.social.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         {% if site.about.social.linkedin %}
+           <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.about.social.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
          {% endif %}
-         {% if site.user.social.email %}
-           <li class="email"><a href="mailto:{{site.user.social.email}}"><i class="fa fa-envelope-o"></i></a></li>
+         {% if site.about.social.email %}
+           <li class="email"><a href="mailto:{{site.about.social.email}}"><i class="fa fa-envelope-o"></i></a></li>
          {% endif %}
        </ul>
      </section>
@@ -111,7 +111,7 @@ Width: 100%;
    <div class="column column-2">
      <div class="card">
        <h1 class="card-title">About</h1>
-       <p>{{ site.user.about }}</p>
+       <p>{{ site.about.bio }}</p>
      </div>
   </div>
 </div>
