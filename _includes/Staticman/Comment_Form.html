@@ -16,7 +16,6 @@
 
     {% case site.skin %}
       {% when "light" %}
-        <textarea class="textfield__input" name="fields[message]" id="comment-form-message" placeholder="Your comment (markdown accepted)" required></textarea>
       {% when "dark" %}
       <div class="trumbowyg-dark">
         <textarea class="textfield__input" name="fields[message]" id="comment-form-message" placeholder="Your comment (markdown accepted)" required></textarea>
@@ -24,7 +23,11 @@
     {% endcase %}
 
 
+    <div class="textfield narrowfield">
+      <label for="comment-form-name"><h3>Name</h3></label>
+      <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
 
+    </div>
 
     <div class="textfield narrowfield">
       <label for="comment-form-email"><h3>E-mail</h3></label>
