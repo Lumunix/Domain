@@ -5,7 +5,7 @@ author: lumunix
 date: 2021-12-03
 thumbnail: comment-systems.png
 tags: [Comments, Documentation]
-comments: false
+comments: true
 ---
 
 # Staticman Comments
