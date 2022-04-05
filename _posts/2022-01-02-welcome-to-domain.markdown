@@ -51,7 +51,7 @@ Theme features include:
   >
   > **Rendered Text:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. [[Donec rutrum tortor in pharetra vehicula::srs]]. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
 
-- **Comment Systems**: Multiple comment systems available, please see the [[Comment Systems]] post for additional documentation.
+- **Comment Systems**: Multiple comment systems available, please see the post for additional documentation.
 
 - **RSS Feed**: Allows users to keep up to date with your posts!
 
