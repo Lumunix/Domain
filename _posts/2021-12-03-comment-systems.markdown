@@ -27,7 +27,7 @@ preferences:
       staticman_url:  <Staticman URL Here>
 ```
 
-4. Configure options in **Staticman.yml** file in this repository, this configuration file is used to control different operation with staticman.
+4. Configure options in **Staticman.yml** file in this repository, this configuration file is used to control different operations with staticman.
 
 5. (Optional) The Staticman comments system in this Jeykll theme supports reCaptcha v2 for spam protection. In **Staticman.yml** and **config.yml** add the entries for **siteKey** and **secret** from your [[reCaptcha dashboard]](https://www.google.com/recaptcha/admin).
 
@@ -36,5 +36,15 @@ preferences:
 
 In your [_config.yml](https://github.com/Lumunix/Domain/blob/main/_config.yml), do the following:
 
-1. Ensure that **site.preferences.comments.system** is set to **disqus**
-2. Set **site.prefrences.comments.disqus.shortname** to your disqus shortname.
+1. Ensure the comment system is preferences is set to **Disqus**
+```
+preferences:
+  comments:
+    system: disqus
+```
+2. Set shortname property to your disqus shortname.
+```
+preferences:
+    disqus:
+      shortname: lumunix
+```
