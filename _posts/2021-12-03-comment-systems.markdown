@@ -22,9 +22,9 @@ preferences:
 2. Ensure that the staticman branch property is set to the same branch your [[Github pages]](https://pages.github.com) repository is hosted from. Ensure that the staticman url is set to the endpoint of the staticman service you have deployed.
 ```
 preferences:
-    staticman:
-      branch: "main"
-      staticman_url:  <Staticman URL Here>
+  staticman:
+    branch: "main"
+    staticman_url:  <Staticman URL Here>
 ```
 
 4. Configure options in **Staticman.yml** file in this repository, this configuration file is used to control different operations with staticman.
