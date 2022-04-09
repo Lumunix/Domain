@@ -5,7 +5,7 @@ author: lumunix
 date: 2021-12-03
 thumbnail: comment-systems.png
 tags: [Comments, Documentation]
-comments: false
+comments: true
 ---
 
 ## Staticman Comments
@@ -16,15 +16,16 @@ In your [_config.yml](https://github.com/Lumunix/Domain/blob/main/_config.yml), 
 1. Ensure the comment system is preferences is set to **staticman**
 ```
 preferences:
-  comments:
-    system: staticman
+    comments:
+      system: staticman
 ```
 2. Ensure that the staticman branch property is set to the same branch your [[Github pages]](https://pages.github.com) repository is hosted from. Ensure that the staticman url is set to the endpoint of the staticman service you have deployed.
 ```
 preferences:
-  staticman:
-    branch: "main"
-    staticman_url:  <Staticman URL Here>
+    comments:
+      staticman:
+        branch: "main"
+        staticman_url:  <Staticman URL Here>
 ```
 
 4. Configure options in **Staticman.yml** file in this repository, this configuration file is used to control different operations with staticman.
@@ -39,12 +40,12 @@ In your [_config.yml](https://github.com/Lumunix/Domain/blob/main/_config.yml), 
 1. Ensure the comment system is preferences is set to **Disqus**
 ```
 preferences:
-  comments:
-    system: disqus
+      comments:
+        system: disqus
 ```
 2. Set shortname property to your disqus shortname.
 ```
 preferences:
-    disqus:
+   comments:
       shortname: lumunix
 ```
