@@ -17,7 +17,9 @@
             <span class="article-comment-footer">by {{ com.author | escape | strip_newlines }}&nbsp;|&nbsp;</span>
             <details>
                 <summary class="article-comment-footer">Reply</summary>
-                {%- include /Staticman/Comment-Form.html reply_to=cid -%}
+                <div class="comment__meta">
+   <a rel="nofollow" class="comment__reply-link" onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ include.uid }}')">↪&#xFE0E; Reply to {{ include.name }}</a>
+ </div>
             </details>
             {%- include /Staticman/Comments.html replies_to=cid -%}
         </div>
