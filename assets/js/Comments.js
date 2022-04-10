@@ -44,7 +44,7 @@ var addComment = function() {
     }).then(
       function (data) {
         if (data.ok) {
-          showModal('Comment Submitted', 'Thanks! Your comment is <a href="https://github.com/lumunix/lumunix.github.io/pulls">pending</a>. It will appear when approved.');
+          showModal('Comment Submitted', 'Thanks! Your comment is pending. It will appear when approved.');
           form.reset();
           form.doReset();
         } else {
