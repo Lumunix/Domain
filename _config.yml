@@ -115,7 +115,7 @@ preferences:
       staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/Domain/main/comments"
     utterances:
       repo: Lumunix/Domain
-      issue-term: pathname
+      issueterm: pathname
       theme: github-light
       crossorigin: anonymous
 
