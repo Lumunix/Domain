@@ -22,11 +22,11 @@
     <meta content="{{ site.description }}" property="og:description">
   {% endif %}
   {% if page.url %}
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    <meta content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" property="og:url">
   {% endif %}
   {% if page.date %}
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-    <meta content="{{ site.url }}/about/" property="article:author">
+    <meta content="{{ site.url }}{{ site.baseurl }}/about/" property="article:author">
   {% endif %}
   {% if page.img %}
     <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}" property="og:image">
