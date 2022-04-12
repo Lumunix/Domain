@@ -21,7 +21,7 @@
 skin: light #Light(Default), Dark
 baseurl: "/Domain" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "lumunix/Domain" # GitHub username/repo-name
+repository: "Lumunix/Domain" # GitHub username/repo-name
 analytics: G-XFXH3N63NV # Google Analytics
 #######################################################################
 # Sidebar Settings
@@ -113,6 +113,11 @@ preferences:
       #See additional options in staticman.yml
       branch: "main" # "main"
       staticman_url: "https://api.staticman.net/v3/entry/github/lumunix/Domain/main/comments"
+    utterances:
+      repo: Lumunix/Domain
+      issue-term: pathname
+      theme: pathname
+      crossorigin: anonymous
 
 #####################################################################
 # Build Settings
