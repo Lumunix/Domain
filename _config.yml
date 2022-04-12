@@ -116,7 +116,7 @@ preferences:
     utterances:
       repo: Lumunix/Domain
       issue-term: pathname
-      theme: pathname
+      theme: github-light
       crossorigin: anonymous
 
 #####################################################################
