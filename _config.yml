@@ -108,7 +108,7 @@ preferences:
   comments:
     system: utterances #false (default), "disqus", "staticman"
     disqus:
-      shortname: github-dark # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+      shortname: lumunix # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
     staticman:
       #See additional options in staticman.yml
       branch: "main" # "main"
