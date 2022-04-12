@@ -22,11 +22,11 @@
     <meta content="{{ site.description }}" property="og:description">
   {% endif %}
   {% if page.url %}
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    <meta content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" property="og:url">
   {% endif %}
   {% if page.date %}
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-    <meta content="{{ site.url }}/about/" property="article:author">
+    <meta content="{{ site.url }}{{ site.baseurl }}/about/" property="article:author">
   {% endif %}
   {% if page.img %}
     <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}" property="og:image">
@@ -71,7 +71,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
 	<link rel="shortcut icon" href="{{site.baseurl}}/assets/img/favicon/favicon.ico" type="image/x-icon">
-
+	<link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+	<link rel="apple-touch-icon" href="{{ "/assets/img/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/favicon/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ "/assets/img/favicon/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#263959">
 	<!-- Windows Phone -->
