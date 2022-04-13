@@ -1,11 +1,4 @@
 <div class="page-comments">
   {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
-  {% case site.preferences.comments.system %}
-    {% when "disqus" %}
-      {% include /Disqus/Disqus.html %}
-    {% when "staticman" %}
-      {% include /Staticman/Staticman.html %}
-    {% when "utterances" %}
-      {% include /Utterances/Utterances.html %}
-  {% endcase %}
+  {% include Utterances.html %}
 </div>
