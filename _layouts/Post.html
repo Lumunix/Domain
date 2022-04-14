@@ -20,6 +20,18 @@ layout: Main
         {%- include Backlinks.html -%}
         {%- include Related.html -%}
         {%- include Footer.html -%}
+        
+        {% if site.preferences.author.enabled %}
+        {% assign author = site.authors[page.author] %}
+          {% if page.author %}
+            {% include  Author.html %}
+          {% endif %}
+        {% endif %}
+
+        {% if page.comments %}
+          {%- include Comments.html -%}
+        {% endif %}
+
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->
