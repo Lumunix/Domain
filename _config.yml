@@ -116,6 +116,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-tidy
   - jekyll-paginate
+  - jekyll-seo-tag
 
 markdown: kramdown
 paginate: 6
