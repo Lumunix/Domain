@@ -9,4 +9,4 @@ comments: true
 ---
 
 ## Utterances
-[[Utterances::https://github.com/utterance/utterances]] is a lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more! It is directly integrated to the theme and can be setup by setting the variables in the [_config.yml](https://github.com/Lumunix/Domain/blob/main/_config.yml)file.
+[[Utterances::https://github.com/utterance/utterances]] is a lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more! It is directly integrated to the theme and can be setup by setting the variables in the [Utterances.html](https://github.com/Lumunix/Domain/blob/main/_includes/Utterances.html)file. Please see [[Utterances::https://github.com/utterance/utterances]] for setup.
