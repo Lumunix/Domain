@@ -23,12 +23,29 @@ baseurl: "/Domain" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "Lumunix/Domain" # GitHub username/repo-name
 analytics: G-XFXH3N63NV # Google Analytics
+timezone: America/New_York
+
+#######################################################################
+# SEO settings
+#######################################################################
+author:
+  name: Lumunix
+  twitter: lumunix
+  image: Icon.png
+twitter:
+  username: lumunix
+  card: summary_large_image
+social:
+  name: Lumunix
+  links:
+    - https://twitter.com/lumunix
+    - https://github.com/lumunix
 #######################################################################
 # Sidebar Settings
 #######################################################################
 sidebar:
   title: Lumunix
-  image: Icon.png
+  image: c
   bio: Hello I'm Lumunix. I am a software engineer that specializes in automation.
   copyright: Lumunix
   social:
