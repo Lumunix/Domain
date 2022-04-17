@@ -3,10 +3,10 @@ layout: Main
 ---
 <article class="article-page">
   <div class="page-content">
-    {% if page.header %}
+    {% if page.image %}
     <div class="page-header-image">
       <figure>
-        <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.header}} alt="{{page.title}}">
+        <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.image}} alt="{{page.title}}">
       </figure>
     </div> <!-- End Page Cover Image -->
     {% else %}
@@ -20,7 +20,7 @@ layout: Main
         {%- include Backlinks.html -%}
         {%- include Related.html -%}
         {%- include Footer.html -%}
-        
+
         {% if site.preferences.author.enabled %}
         {% assign author = site.authors[page.author] %}
           {% if page.author %}
