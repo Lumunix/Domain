@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Code Sections
+description: Information on adding pieces of code to your posts.
 author: lumunix
 date: 2021-10-03
 thumbnail: codesections.png

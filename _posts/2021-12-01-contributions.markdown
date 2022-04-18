@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Contributions
+description: How to contribute to the project.
 author: lumunix
 date: 2021-12-01
 thumbnail: contributions.png

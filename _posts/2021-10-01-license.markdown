@@ -1,11 +1,11 @@
 ---
 layout: Post
 title: License
+description: Information on the themes licensing.
 author: lumunix
 date: 2021-10-01
 thumbnail: license.png
 image: /assets/img/banner.png
-description: lets test this out see if it works
 tags: [License, Documentation]
 comments: false
 ---

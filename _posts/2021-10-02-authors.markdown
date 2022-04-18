@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Authors
+description: Information on adding author profiles to the bottom of your posts.
 author: lumunix
 date: 2021-10-03
 thumbnail: authors.png

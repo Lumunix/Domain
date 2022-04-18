@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Mermaid
+description: How to use Mermaid graphs present in the theme.
 author: lumunix
 date: 2021-10-04
 thumbnail: mermaid.png

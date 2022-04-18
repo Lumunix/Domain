@@ -4,6 +4,7 @@ title: Analytics
 author: lumunix
 date: 2021-12-02
 thumbnail: analytics.png
+description: How to integrate google analytics.
 tags: [Analytics, Documentation]
 comments: false
 ---

@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Comment Systems
+description: Commenting systems available in the theme.
 author: lumunix
 date: 2021-12-03
 thumbnail: comment-systems.png
