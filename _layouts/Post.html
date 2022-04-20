@@ -11,27 +11,24 @@ layout: Main
     </div> <!-- End Page Cover Image -->
     {% else %}
     {% endif %}
-    <div class="wrap-content">
-      <header class="header-page">
-        <h1 class="page-title">{{page.title}}</h1>
-        <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-      </header>
-        {%- include Content.html -%}
-        {%- include Backlinks.html -%}
-        {%- include Related.html -%}
-        {%- include Footer.html -%}
+    <header class="header-page">
+      <h1 class="page-title">{{page.title}}</h1>
+      <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+    </header>
+      {%- include Content.html -%}
+      {%- include Backlinks.html -%}
+      {%- include Related.html -%}
+      {%- include Footer.html -%}
 
-        {% if site.preferences.author.enabled %}
-        {% assign author = site.authors[page.author] %}
-          {% if page.author %}
-            {% include  Author.html %}
-          {% endif %}
+      {% if site.preferences.author.enabled %}
+      {% assign author = site.authors[page.author] %}
+        {% if page.author %}
+          {% include  Author.html %}
         {% endif %}
+      {% endif %}
 
-        {% if page.comments %}
-          {%- include Comments.html -%}
-        {% endif %}
-
-    </div> <!-- End Wrap Content -->
+      {% if page.comments %}
+        {%- include Comments.html -%}
+      {% endif %}
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->
