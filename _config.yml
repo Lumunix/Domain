@@ -23,6 +23,27 @@ baseurl: "/Domain" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "Lumunix/Domain" # GitHub username/repo-name
 analytics: G-XFXH3N63NV # Google Analytics
+timezone: America/New_York
+
+#######################################################################
+# SEO settings
+# Jekyll-SEO-Tag https://github.com/Lumunix/jekyll-seo-tag/blob/master/docs/usage.md
+#######################################################################
+logo: /assets/img/Icon.png
+tagline: Personal knowledge repository and blog template.
+description:  Domain - a specified sphere of activity or knowledge, your personal knowledge repository and blog.
+author:
+  name: Lumunix
+  twitter: lumunix
+  image: /assets/img/Icon.png
+twitter:
+  username: lumunix
+  card: summary_large_image
+social:
+  name: Lumunix
+  links:
+    - https://twitter.com/lumunix
+    - https://github.com/lumunix
 #######################################################################
 # Sidebar Settings
 #######################################################################

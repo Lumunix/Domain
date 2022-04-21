@@ -1,15 +1,15 @@
 ---
 layout: Post
 title: License
+description: Information on the themes licensing.
 author: lumunix
 date: 2021-10-01
 thumbnail: license.png
-header: banner.png
+image: /assets/img/banner.png
 tags: [License, Documentation]
 comments: false
 ---
 Licensing information for the project.
-
 
 Copyright 2022 Lumunix
 

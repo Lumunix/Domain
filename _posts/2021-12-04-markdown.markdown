@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Markdown
+description: Markdown examples to use in posts.
 author: lumunix
 date: 2021-12-04
 thumbnail: markdown.png

@@ -3,35 +3,32 @@ layout: Main
 ---
 <article class="article-page">
   <div class="page-content">
-    {% if page.header %}
+    {% if page.image %}
     <div class="page-header-image">
       <figure>
-        <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.header}} alt="{{page.title}}">
+        <img class="page-image" src={{ "" | prepend: site.baseurl | append : page.image}} alt="{{page.title}}">
       </figure>
     </div> <!-- End Page Cover Image -->
     {% else %}
     {% endif %}
-    <div class="wrap-content">
-      <header class="header-page">
-        <h1 class="page-title">{{page.title}}</h1>
-        <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-      </header>
-        {%- include Content.html -%}
-        {%- include Backlinks.html -%}
-        {%- include Related.html -%}
-        {%- include Footer.html -%}
-        
-        {% if site.preferences.author.enabled %}
-        {% assign author = site.authors[page.author] %}
-          {% if page.author %}
-            {% include  Author.html %}
-          {% endif %}
-        {% endif %}
+    <header class="header-page">
+      <h1 class="page-title">{{page.title}}</h1>
+      <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+    </header>
+      {%- include Content.html -%}
+      {%- include Backlinks.html -%}
+      {%- include Related.html -%}
+      {%- include Footer.html -%}
 
-        {% if page.comments %}
-          {%- include Comments.html -%}
+      {% if site.preferences.author.enabled %}
+      {% assign author = site.authors[page.author] %}
+        {% if page.author %}
+          {% include  Author.html %}
         {% endif %}
+      {% endif %}
 
-    </div> <!-- End Wrap Content -->
+      {% if page.comments %}
+        {%- include Comments.html -%}
+      {% endif %}
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->

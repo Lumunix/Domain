@@ -1,6 +1,7 @@
 ---
 layout: Post
 title: Useful References
+description: Links to various libraries and technologies used in this theme.
 author: lumunix
 date: 2021-11-01
 thumbnail: useful-references.png
