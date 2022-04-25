@@ -3,10 +3,10 @@ layout: Main
 ---
 <article class="article-page">
   <div class="page-content">
-    {% if page.image %}
+    {% if page.header %}
     <div class="page-header-image">
       <figure>
-        <img class="page-image" src={{ "" | prepend: site.baseurl | append : page.image}} alt="{{page.title}}">
+        <img class="page-image" src={{ "" | prepend: site.baseurl | append : page.header}} alt="{{page.title}}">
       </figure>
     </div> <!-- End Page Cover Image -->
     {% else %}

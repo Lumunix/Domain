@@ -49,7 +49,7 @@ social:
 #######################################################################
 sidebar:
   title: Lumunix
-  image: Icon.png
+  image: /assets/img/Icon.png
   bio: Hello I'm Lumunix. I am a software engineer that specializes in automation.
   copyright: Lumunix
   social:
@@ -67,7 +67,7 @@ sidebar:
 #######################################################################
 about:
   name: Lumunix
-  image: type.png
+  image: /assets/img/type.png
   bio: Hello I'm Lumunix. I am a software engineer that specializes in automation.
   social:
     twitter: Lumunix
@@ -128,6 +128,25 @@ preferences:
     crossorigin: anonymous
 
 #####################################################################
+# Post Authors
+#####################################################################
+
+authors:
+  lumunix:
+    name: Lumunix
+    image: /assets/img/Icon.png
+    bio: Hello I'm Lumunix. I'm a software engineer that specializes in automation. I love to learn about new and creative ways to get computers to do my bidding, the world is filled with problems waiting to be solved!
+    social:
+      twitter: Lumunix
+      github: Lumunix
+      youtube: Lumunix
+      linkedin: blah
+      twitch: lumunix
+      facebook: blah
+      instagram: lum_unix
+      email: lumunix@icloud.com
+
+#####################################################################
 # Build Settings
 # plugins, markdown,
 #####################################################################
@@ -159,25 +178,6 @@ defaults:
       layout: Post
       permalink: /posts/:title
       content-type: post
-
-#####################################################################
-# Post Authors
-#####################################################################
-
-authors:
-  lumunix:
-    name: Lumunix
-    image: Icon.png
-    bio: Hello I'm Lumunix. I'm a software engineer that specializes in automation. I love to learn about new and creative ways to get computers to do my bidding, the world is filled with problems waiting to be solved!
-    social:
-      twitter: Lumunix
-      github: Lumunix
-      youtube: Lumunix
-      linkedin: blah
-      twitch: lumunix
-      facebook: blah
-      instagram: lum_unix
-      email: lumunix@icloud.com
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -4,7 +4,9 @@ title: Authors
 description: Information on adding author profiles to the bottom of your posts.
 author: lumunix
 date: 2021-10-03
-thumbnail: authors.png
+thumbnail: /assets/img/authors.png
+image: /assets/img/authors.png
+header: /assets/img/banner.png
 tags: [Authors,Documentation]
 comments: false
 ---

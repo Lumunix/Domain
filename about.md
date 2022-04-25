@@ -47,7 +47,7 @@ Width: 100%;
 <div class="columns">
    <div class="column column-1">
      <div class="card" id="about-card">
-       <img src="{{site.baseurl}}/assets/img/{{ site.about.image }}"  />
+       <img src="{{site.baseurl}}{{ site.about.image }}"  />
        <h1 class="about-name">{{ site.about.name }}</h1>
        <p class="about-bio">{{ site.about.bio }}</p>
        {% if site.about.social.github %} {%- include GithubFollowButton.html -%} {%

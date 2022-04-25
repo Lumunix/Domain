@@ -5,7 +5,7 @@ layout: Default
   <header>
     <div class="sidebar-info">
       <div class="sidebar-image">
-        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.sidebar.image %}{{site.sidebar.image}}{% endif %}" alt="{{site.sidebar.title}}"></a>
+        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}{% if site.sidebar.image %}{{site.sidebar.image}}{% endif %}" alt="{{site.sidebar.title}}"></a>
       </div>
       <div class="sidebar-title">{{site.sidebar.title}}</div>
       <p>{{site.sidebar.bio}}</p>

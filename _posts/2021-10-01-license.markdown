@@ -4,8 +4,9 @@ title: License
 description: Information on the themes licensing.
 author: lumunix
 date: 2021-10-01
-thumbnail: license.png
-image: /assets/img/banner.png
+thumbnail: /assets/img/license.png
+image: /assets/img/license.png
+header: /assets/img/banner.png
 tags: [License, Documentation]
 comments: false
 ---
