@@ -4,7 +4,9 @@ title: Comment Systems
 description: Commenting systems available in the theme.
 author: lumunix
 date: 2021-12-03
-thumbnail: comment-systems.png
+thumbnail: /assets/img/comment-systems.png
+image: /assets/img/comment-systems.png
+header: /assets/img/banner.png
 tags: [Comments, Documentation]
 comments: true
 ---

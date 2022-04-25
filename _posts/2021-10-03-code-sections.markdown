@@ -4,7 +4,9 @@ title: Code Sections
 description: Information on adding pieces of code to your posts.
 author: lumunix
 date: 2021-10-03
-thumbnail: codesections.png
+thumbnail: /assets/img/codesections.png
+image: /assets/img/codesections.png
+header: /assets/img/banner.png
 tags: [Code,Documentation]
 comments: false
 ---

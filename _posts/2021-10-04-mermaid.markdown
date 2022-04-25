@@ -4,7 +4,9 @@ title: Mermaid
 description: How to use Mermaid graphs present in the theme.
 author: lumunix
 date: 2021-10-04
-thumbnail: mermaid.png
+thumbnail: /assets/img/mermaid.png
+image: /assets/img/mermaid.png
+header: /assets/img/banner.png
 tags: [Graphs,Documentation]
 comments: false
 ---

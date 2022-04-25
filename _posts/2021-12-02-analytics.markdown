@@ -3,7 +3,9 @@ layout: Post
 title: Analytics
 author: lumunix
 date: 2021-12-02
-thumbnail: analytics.png
+thumbnail: /assets/img/analytics.png
+image: /assets/img/analytics.png
+header: /assets/img/banner.png
 description: How to integrate google analytics.
 tags: [Analytics, Documentation]
 comments: false

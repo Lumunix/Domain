@@ -2,7 +2,7 @@
 
   <h2>Author</h2>
   <div class="author-image">
-    <a><img src="{{site.baseurl}}/assets/img/{% if author.image %}{{author.image}}{% endif %}" alt="{{author.name}}"></a>
+    <a><img src="{{site.baseurl}}{% if author.image %}{{author.image}}{% endif %}" alt="{{author.name}}"></a>
   </div>
   <div class="author-name">{{author.name}}</div>
   <p>{{author.bio}}</p>
