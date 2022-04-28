@@ -13,10 +13,12 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.add_runtime_dependency "jekyll", ">= 3.7", "< 3.9"
+  spec.add_runtime_dependency "webrick", "~> 1.7"
+  spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.1"
+  spec.add_runtime_dependency "jekyll", "~> 3.9.2"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.1"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8"
 
   spec.add_development_dependency "bundler", "~> 2.2.24"
