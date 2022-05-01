@@ -1,0 +1,4 @@
+---
+layout: Posts
+permalink: /posts/
+---

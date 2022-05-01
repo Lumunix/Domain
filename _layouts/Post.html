@@ -1,5 +1,5 @@
 ---
-layout: Main
+layout: Sidebar
 ---
 <article class="article-page">
   <div class="page-content">
@@ -13,7 +13,7 @@ layout: Main
     {% endif %}
     <header class="header-page">
       <h1 class="page-title">{{page.title}}</h1>
-      <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}</span></div>
     </header>
       {%- include Content.html -%}
       {%- include Backlinks.html -%}

@@ -1,0 +1,46 @@
+---
+layout: Default
+---
+<aside class="sidebar">
+  <header>
+    <div class="sidebar-info">
+      <div class="sidebar-image">
+        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}{% if site.sidebar.image %}{{site.sidebar.image}}{% endif %}" alt="{{site.sidebar.title}}"></a>
+      </div>
+      <div class="sidebar-title">{{site.sidebar.title}}</div>
+      <p>{{site.sidebar.bio}}</p>
+    </div>
+  </header>
+  <footer>
+    <section class="social">
+      <ul>
+        {% if site.sidebar.social.twitter %}
+          <li><a href="https://twitter.com/{{ site.sidebar.social.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.sidebar.social.facebook %}
+          <li><a href="https://facebook.com/{{ site.sidebar.social.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.sidebar.social.github %}
+          <li class="github"><a href="http://github.com/{{site.sidebar.social.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% endif %}
+        {% if site.sidebar.social.linkedin %}
+          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.sidebar.social.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        {% endif %}
+        {% if site.sidebar.social.email %}
+          <li class="email"><a href="mailto:{{site.sidebar.social.email}}"><i class="fa fa-envelope-o"></i></a></li>
+        {% endif %}
+      </ul>
+    </section>
+    <div class="copyright">
+      <p>{{site.time | date: '%Y'}} &copy; {{site.sidebar.copyright}}</p>
+    </div>
+  </footer>
+</aside>
+<div class="content-header">
+  {%- include Header.html -%}
+</div>
+<div class="content-box clearfix">
+  {{ content }}
+</div>
+{%- include ContextMenu.html -%}
+{%- include BackToTop.html -%}
