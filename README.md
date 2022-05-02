@@ -1,3 +1,6 @@
+
+[![License](https://img.shields.io/github/license/Lumunix/domain?style=plastic)](https://github.com/Lumunix/Domain/blob/main/LICENSE)
+
 # [Domain](https://lumunix.github.io/Domain/)
 Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text search and automatically generated post organization pages.
 
@@ -6,7 +9,13 @@ Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text s
 ![Showcase](/readme/showcase.png)
 ## Usage
 
-### Development Enviornment
+### Installation
+
+
+
+
+
+### Development Environment
 1. [Install Docker/Compose](https://docs.docker.com/compose/install/). You must have Docker and Compose installed.
 
 2. Create your own copy of this repo using Github's Repository template feature. Clone it to your machine.
