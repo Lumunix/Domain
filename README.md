@@ -13,13 +13,13 @@ Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text s
 ![Showcase](/readme/showcase.png)
 ## Usage
 
-### Installation
 
 
 
 
 
-### Development Environment
+
+## Development Environment
 Included in the repository is a [docker-compose](./docker-compose.yml) file that creates a container from the the official [Jekyll Docker Image](https://hub.docker.com/r/jekyll/jekyll/). This will allow you to setup a development environment without having to install Ruby and Jekyll manually and allow you to quickly test and preview changes.
 
 
