@@ -1,9 +1,7 @@
 # [Domain](https://lumunix.github.io/Domain/)
-
-![Project-Banner](/readme/project-banner.png)
-
 Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text search and automatically generated post organization pages.
 
+![Project-Banner](/readme/project-banner.png)
 
 ![Showcase](/readme/showcase.png)
 ## Usage
