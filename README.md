@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/github/license/Lumunix/domain?style=plastic)](https://github.com/Lumunix/Domain/blob/main/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
 [![RubyGem](https://img.shields.io/gem/v/domain-jekyll?style=plastic)](https://rubygems.org/gems/minimal-mistakes-jekyll)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/Lumunix)
 
 
 # [Domain](https://lumunix.github.io/Domain/)
