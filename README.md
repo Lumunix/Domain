@@ -4,6 +4,8 @@
 
 Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text search and automatically generated post organization pages.
 
+
+![Showcase](/readme/showcase.png)
 ## Usage
 
 1. [Install Docker/Compose](https://docs.docker.com/compose/install/). You must have Docker and Compose installed.
