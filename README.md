@@ -1,5 +1,6 @@
 
 [![License](https://img.shields.io/github/license/Lumunix/domain?style=plastic)](https://github.com/Lumunix/Domain/blob/main/LICENSE)
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
 
 # [Domain](https://lumunix.github.io/Domain/)
 Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text search and automatically generated post organization pages.
