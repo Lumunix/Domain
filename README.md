@@ -83,6 +83,6 @@ Included in the repository is a [docker-compose](./docker-compose.yml) file that
 
 2. [Install Docker/Compose](https://docs.docker.com/compose/install/). You must have Docker and Compose installed.
 
-3. In the directory you downloaded the project, open command line or terminal and run the following command `docker compose up`.
+3. In the directory you downloaded the project, open terminal and run the following command `docker compose up`.
 
 4. You should now be able to go to your web browser and view the site [Here](http://127.0.0.1:4000/)
