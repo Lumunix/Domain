@@ -15,11 +15,13 @@ Jekyll Knowledge Base / Blog Theme that provides wiki style linking, full text s
 
 ## Installation
 
-There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
+- Option 1: Use the [Domain Github Pages Initializer](https://lumunix.github.io/Domain-Github-Pages-Initializer/)
+- Option 2: Setup as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes)
+- Option 3: Setup as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
+- Option 4: Forking/directly copying all of the theme files into your project.
 
 
-
-### Gem-based method
+### Gem-based theme
 
 With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
 
