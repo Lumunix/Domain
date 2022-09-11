@@ -22,3 +22,4 @@ This page shows how to add common links in markdown to the link library, the lin
 [_config.yml](https://github.com/Lumunix/Domain-Github-Pages-Initializer/blob/main/_config.yml
 
 ```
+{% include LinkLibrary.md %}

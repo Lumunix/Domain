@@ -24,7 +24,5 @@
 	<!-- Github Buttons -->
 	<script async defer src="{{site.baseurl}}/assets/vendor/github/buttons.js"></script>
 	<!-- Jekyll-SEO-Tag -->
-	{% if jekyll.environment != "development" %}
-  	{% include Seo.html %}
-	{% endif %}
+	{% seo %}
 </head>

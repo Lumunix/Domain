@@ -1,3 +1,3 @@
 source "https://rubygems.org"
-gem 'jekyll-admin'
+gem 'jekyll-admin', group: :jekyll_plugins
 gemspec
