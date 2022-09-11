@@ -29,7 +29,6 @@
 *
 {%- endcomment -%}
 
-{%- if page.layout == "Main" -%}
 {%- if site.preferences.contextmenu.enabled -%}
 <nav class="context-menu" id="context-menu">
     <ul class="context-menu__items">
@@ -66,5 +65,4 @@
 <nav class="context-menu-res" id="context-menu-res">
 </nav>
 <script src="{{site.baseurl}}/assets/js/ContextMenu.js"></script>
-{%- endif -%}
 {%- endif -%}
