@@ -17,7 +17,7 @@
 #######################################################################
 # Site settings
 #######################################################################
-
+title: Domain
 skin: light #Light(Default), Dark
 baseurl: "/Domain" # the subpath of your site, e.g. /blog
 url: "https://lumunix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -158,6 +158,11 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
+jekyll_admin:
+  hidden_links:
+    - datafiles
+  homepage: "posts"
+
 markdown: kramdown
 paginate: 6
 paginate_path: "/page/:num"
@@ -203,12 +208,3 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-jekyll_admin:
-  hidden_links:
-    - posts
-    - pages
-    - staticfiles
-    - datafiles
-    - configuration
-  homepage: "pages"
