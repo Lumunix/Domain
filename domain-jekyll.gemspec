@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name                    = "domain-jekyll"
-  spec.version                 = "1.0.4"
+  spec.version                 = "1.1.0"
   spec.authors                 = ["Lumunix"]
   spec.email                   = ["lumunix@icloud.com"]
   spec.summary                 = %q{Jekyll theme for building a personal knowledge repository and blog.}
