@@ -77,6 +77,6 @@ Theme features include:
 
 - **Multiple Authors Support** : Multiple [[Authors]] are supported, perfect for hosting guest articles or being part of a larger wiki.
 
-- **Link Collections** : [[LinkLibrary]] allows you to list link in one place and reuse links across all your posts, update links in one place.
+- **Link Collections** : [[Link Library]] allows you to list link in one place and reuse links across all your posts, update links in one place.
 
 - **Jekyll Admin CMS** : [[Jekyll Admin]] have a cms like experience similar to wordpress to write posts.

@@ -24,9 +24,6 @@ Then add the LinkLibrary liquid include to your post page.
 ```markdown
 {% raw %}{% include LinkLibrary.md %}{% endraw %}
 ```
-
-
-
 You can reference a LinkLibrary entry using the following syntax.
 ```markdown
 //LinkLibrary
