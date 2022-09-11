@@ -161,7 +161,6 @@ plugins:
 jekyll_admin:
   hidden_links:
     - datafiles
-  homepage: "posts"
 
 markdown: kramdown
 paginate: 6
