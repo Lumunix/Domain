@@ -215,7 +215,6 @@ img {
 
 code {
   font-family: Consolas, 'Courier New', Courier, monospace;
-  font-family: Consolas, 'Courier New', Courier, monospace;
   display: inline-block;
   overflow: auto !important;
   white-space: pre-wrap !important;
@@ -250,7 +249,7 @@ pre code {
   overflow: auto !important;
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
-  padding: 15px;
+
   vertical-align: middle;
   width: 100%;
   background-color: $secondary-bg-color;
