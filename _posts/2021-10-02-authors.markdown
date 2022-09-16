@@ -12,6 +12,7 @@ comments: false
 ---
 Domain has support for multiple authors, Authors profiles are at the bottom of every post and can be set by specifying the name of the author in the frontmatter of a post. Contents of the author profile are set in the [_config.yml](https://github.com/Lumunix/Domain/blob/main/_config.yml) file.
 
+{% include CodeHeader.html %}
 ```markdown
 ---
 author: lumunix
@@ -19,6 +20,7 @@ author: lumunix
 ```
 
 This is the configuration for the author profile at the bottom of this page.
+{% include CodeHeader.html %}
 ```markdown
 authors:
   lumunix:
