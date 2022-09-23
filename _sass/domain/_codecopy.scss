@@ -1,44 +1,44 @@
 /* ==========================================================================
    Code Copy
    ========================================================================== */
+.code-header {
+  display: flex;
+  justify-content: flex-end;
+}
 
-   .code-header {
-     display: flex;
-     justify-content: flex-end;
-   }
+.copy-code-button {
+  display: grid;
+  margin: 0 0 -15px;
+  background-color: $secondary-bg-color;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-column-gap: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 8px;
 
-   .copy-code-button {
-     display: grid;
-     margin:0px 0px -15px 0px;
-     background-color: $secondary-bg-color;
-     grid-auto-flow: column;
-     align-items: center;
-     grid-column-gap: 4px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-     font-size: 1rem;
-     padding: 4px 8px;
+  &::before {
+    content: "Copy";
+  }
 
-     &::before {
-       content: "Copy";
-     }
+  &::after {
+    content: "📋";
+    display: block;
+  }
 
-     &::after {
-       content: "📋";
-       display: block;
-     }
+  &.copied {
+    &::before {
+      content: "Copied!";
+    }
 
-     &.copied {
-       &::before {
-         content: "Copied!";
-       }
+    &::after {
+      content: "✔️";
+    }
+  }
 
-       &::after {
-         content: "✔️";
-       }
-     }
-     &:hover {
-          background-color: $quaternary-bg-color;
-     }
-   }
+  &:hover {
+    background-color: $quaternary-bg-color;
+  }
+}

@@ -1,32 +1,32 @@
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
-   #markdown-toc::before {
-     content: "Table of Contents";
-     font-weight: bold;
-     text-align: center;
-   }
+#markdown-toc::before {
+  content: "Table of Contents";
+  font-weight: bold;
+  text-align: center;
+}
 
-   #markdown-toc li {
-     margin-left: 1rem;
-     list-style: decimal;
-   }
+#markdown-toc li {
+  margin-left: 1rem;
+  list-style: decimal;
+}
 
-   #markdown-toc li * {
-     padding-left: 3px;
-   }
+#markdown-toc li * {
+  padding-left: 3px;
+}
 
-   #markdown-toc {
-     border: 1px solid #aaa;
-     padding: 1.5em;
-     list-style: decimal;
-     display: inline-block;
-   }
+#markdown-toc {
+  border: 1px solid #aaa;
+  padding: 1.5em;
+  list-style: decimal;
+  display: inline-block;
+}
 
-   #markdown-toc a {
-     text-decoration: none;
-   }
+#markdown-toc a {
+  text-decoration: none;
+}
 
-   #markdown-toc a:hover {
-     text-decoration: underline;
-   }
+#markdown-toc a:hover {
+  text-decoration: underline;
+}

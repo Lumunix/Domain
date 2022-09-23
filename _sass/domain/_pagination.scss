@@ -1,18 +1,20 @@
 /* ==========================================================================
    Pagination
    ========================================================================== */
-   /* pagination */
-   .pagination-link{
-       padding:15px;
-       text-decoration: none;
-   }
-   .pagination-link a:hover{
-       text-decoration: none;
-   }
-   .pagination {
-       display: -ms-flexbox;
-       display: flex;
-       padding-left: 0;
-       list-style: none;
-       border-radius: .25rem;
-   }
+/* pagination */
+.pagination-link {
+  padding: 15px;
+  text-decoration: none;
+}
+
+.pagination-link a:hover {
+  text-decoration: none;
+}
+
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
