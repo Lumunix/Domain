@@ -395,11 +395,9 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 This line is also a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
+<h3> Youtube Embed </h3>
+{% include YoutubeEmbed.html id="jLir6mE3V80" %}
 <h3> Twitter Embed </h3>
-
- <blockquote class="twitter-tweet"><p lang="da" dir="ltr">Fennec</p>&mdash; OvEarLord Lumi (@Lumunix) <a href="https://twitter.com/Lumunix/status/1512996266762018818?ref_src=twsrc%5Etfw">April 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
- <h3>YouTube Responsive Embed</h3>
-
- <iframe width="560" height="315" src="https://www.youtube.com/embed/jLir6mE3V80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include TwitterEmbed.html id="Lumunix/status/1512996266762018818" %}
+<h3> Twitch Embed </h3>
+{% include TwitchEmbed.html id="Lumunix" %}
