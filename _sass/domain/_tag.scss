@@ -1,14 +1,15 @@
 /* ==========================================================================
    Tag
    ========================================================================== */
-
 .tags {
   margin: 0;
   padding: 10px;
+
   li {
     display: inline-block;
     margin: 5px;
     list-style: none;
+
     a {
       text-decoration: none;
       color: $primary-text-color;
@@ -16,7 +17,8 @@
       padding: 5px 10px;
       border: 1px solid $secondary-border-color;
       background-color: $secondary-bg-color;
-      transition: all .3s;
+      transition: all 0.3s;
+
       &:hover {
         background-color: $quaternary-bg-color;
       }
