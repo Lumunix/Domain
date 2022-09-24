@@ -399,5 +399,3 @@ This line is only separated by a single newline, so it's a separate line in the 
 {% include YoutubeEmbed.html id="jLir6mE3V80" %}
 <h3> Twitter Embed </h3>
 {% include TwitterEmbed.html id="Lumunix/status/1512996266762018818" %}
-<h3> Twitch Embed </h3>
-{% include TwitchEmbed.html id="Lumunix" %}
