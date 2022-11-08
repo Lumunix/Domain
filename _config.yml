@@ -152,10 +152,11 @@ authors:
 # Build Settings
 # plugins, markdown,
 #####################################################################
-
+collections:
+  - tutorials
 collections_dir: collections
 collections:
-  portfolio:
+  tutorials:
     output: true
     permalink: /:collection/:path/
 
