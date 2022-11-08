@@ -154,6 +154,7 @@ authors:
 #####################################################################
 collections:
   - tutorials
+
 collections_dir: collections
 collections:
   tutorials:
