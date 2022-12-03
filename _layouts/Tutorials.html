@@ -1,12 +1,20 @@
 ---
-layout: Page
+layout: Sidebar
 ---
-
+<div id="post-wrapper">
 {% for tutorial in site.tutorials %}
-  <h2>
-    <a href="{{ tutorial.url }}">
-      {{ tutorial.name }} - {{ tutorial.position }}
-    </a>
-  </h2>
-  <p>{{ tutorial.content | markdownify }}</p>
+  <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{site.baseurl}}{{tutorial.url}}">
+    {% if tutorial.thumbnail %}
+      <a class="post-thumbnail" style="background-image: url({{"" | prepend: site.baseurl | append : tutorial.thumbnail}})" href="{{tutorial.url | prepend: site.baseurl}}"></a>
+    {% else %}
+    {% endif %}
+    <div class="post-content">
+      <h2 class="post-title"><a href="{{tutorial.url | prepend: site.baseurl}}">{{tutorial.title}}</a></h2>
+      <p>{{ tutorial.content | strip_html | truncatewords: 60 }}</p>
+      <span class="post-date">{{tutorial.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+      <span class="post-words">{% capture words %}{{ tutorial.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+
+    </div>
+  </article>
 {% endfor %}
+</div>
