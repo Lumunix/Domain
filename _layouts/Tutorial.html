@@ -1,37 +1,55 @@
 ---
 layout: Page
 ---
-{% if page.header %}
-<div class="page-header-image">
-  <figure>
-    <img class="page-image" src={{ "" | prepend: site.baseurl | append : page.header}} alt="{{page.title}}">
-  </figure>
-</div> <!-- End Page Cover Image -->
-{% else %}
-{% endif %}
-<header class="header-page">
-  <h1 class="page-title">{{page.title}}</h1>
-  <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}</span></div>
-</header>
+<article class="article-page">
+  <div class="page-content">
+    {% if page.header %}
+    <div class="page-header-image">
+      <figure>
+        <img class="page-image" src={{ "" | prepend: site.baseurl | append : page.header}} alt="{{page.title}}">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    {% else %}
+    {% endif %}
+    <header class="header-page">
+      <h1 class="page-title">{{page.title}}</h1>
+      <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}</span></div>
+    </header>
+      {%- include Content.html -%}
+
+      <div id="post-wrapper">
+        {% for tag in site.tags %}
+          {%- if tag[0] == page.tutorial_tag -%}
+            {% for post in tag[1] %}
+            <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{site.baseurl}}{{post.url}}">
+              {% if post.thumbnail %}
+                <a class="post-thumbnail" style="background-image: url({{"" | prepend: site.baseurl | append : post.thumbnail}})" href="{{post.url | prepend: site.baseurl}}"></a>
+              {% else %}
+              {% endif %}
+              <div class="post-content">
+                <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+                <p>{{ post.content | strip_html | truncatewords: 60 }}</p>
+                <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+                <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+              </div>
+            </article>
+            {% endfor %}
+          {%- endif -%}
+        {% endfor %}
+      </div>
+
+      {%- include Footer.html -%}
 
 
-<div id="post-wrapper">
-  {% for tag in site.tags %}
-    {%- if tag[0] == page.tutorial_tag -%}
-      {% for post in tag[1] %}
-      <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{site.baseurl}}{{post.url}}">
-        {% if post.thumbnail %}
-          <a class="post-thumbnail" style="background-image: url({{"" | prepend: site.baseurl | append : post.thumbnail}})" href="{{post.url | prepend: site.baseurl}}"></a>
-        {% else %}
+      {% if site.preferences.author.enabled %}
+      {% assign author = site.authors[page.author] %}
+        {% if page.author %}
+          {% include  Author.html %}
         {% endif %}
-        <div class="post-content">
-          <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-          <p>{{ post.content | strip_html | truncatewords: 60 }}</p>
-          <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-          <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-        </div>
-      </article>
-      {% endfor %}
-    {%- endif -%}
-  {% endfor %}
-</div>
+      {% endif %}
+
+      {% if page.comments %}
+        {%- include Comments.html -%}
+      {% endif %}
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
