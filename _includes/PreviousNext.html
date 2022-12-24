@@ -1,14 +1,14 @@
-{% if page.previous or page.next %}
+{% if page.tutorial_previous or page.tutorial_next %}
   <nav class="previousnext">
-    {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}" class="previousnext--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% if page.tutorial_previous %}
+      <a href="{{ page.tutorial_previous | relative_url }}" class="previousnext--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% else %}
-      <a href="#" class="previousnext--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      <a href="#" class="previousnext--pager disabled">{{ "Previous" }}</a>
     {% endif %}
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" class="previousnext--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% if page.tutorial_next %}
+      <a href="{{ page.tutorial_next | relative_url }}" class="previousnext--pager">{{ "Next" }}</a>
     {% else %}
-      <a href="#" class="previousnext--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="#" class="previousnext--pager disabled">{{ "Next" }}</a>
     {% endif %}
   </nav>
 {% endif %}

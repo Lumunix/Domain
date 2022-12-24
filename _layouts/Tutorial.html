@@ -13,10 +13,8 @@ layout: Page
     {% endif %}
     <header class="header-page">
       <h1 class="page-title">{{page.title}}</h1>
-      <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}</span></div>
     </header>
       {%- include Content.html -%}
-
       <div id="post-wrapper">
         {% for tag in site.tags %}
           {%- if tag[0] == page.tutorial_tag -%}

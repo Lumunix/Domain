@@ -8,6 +8,8 @@ thumbnail: /assets/img/jekylladmin.png
 image: /assets/img/jekylladmin.png
 header: /assets/img/banner.png
 tags: [CMS,Documentation]
+tutorial_next: /posts/code-sections
+tutorial_previous:
 comments: false
 ---
 [Jekyll Admin](https://jekyll.github.io/jekyll-admin/) is a content management system gem that allows jekyll sites to be edited with a user experience similar to wordpress.
