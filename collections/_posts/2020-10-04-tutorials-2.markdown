@@ -1,0 +1,23 @@
+---
+layout: Post
+title: Tutorial 2
+description: Example of Tutorial Collection
+author: lumunix
+date: 2020-10-04
+thumbnail: /assets/img/tutorial.png
+image: /assets/img/tutorial.png
+header: /assets/img/banner.png
+tags: [Sample_Tutorial,Documentation]
+tutorial_next:
+tutorial_previous: /posts/tutorials-1
+comments: false
+---
+Sample post that is part of the [Tutorial](http://localhost:4000/Domain/tutorials/) collection feature that allows you to create a sequential list of posts linked together with relative urls pointing to the next post in the series. This is useful if you want to create multiple segments with posts in a defined order.
+
+
+ For individual posts in a tutorial the Previous and Next buttons on the bottom page are controlled by values present in the following frontmatter variables. These are relative links to the posts that you want to be the previous step and the next step. This has to be done for each post in the tutorial.
+{% include CodeHeader.html %}
+```javascript
+tutorial_next:
+tutorial_previous: /posts/tutorials-1
+```

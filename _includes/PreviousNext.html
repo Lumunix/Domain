@@ -1,7 +1,7 @@
 {% if page.tutorial_previous or page.tutorial_next %}
   <nav class="previousnext">
     {% if page.tutorial_previous %}
-      <a href="{{ page.tutorial_previous | relative_url }}" class="previousnext--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      <a href="{{ page.tutorial_previous | relative_url }}" class="previousnext--pager">{{ "Previous" }}</a>
     {% else %}
       <a href="#" class="previousnext--pager disabled">{{ "Previous" }}</a>
     {% endif %}
