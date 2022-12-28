@@ -1,0 +1,27 @@
+---
+layout: Post
+title: Mermaid
+description: How to use Mermaid graphs present in the theme.
+author: lumunix
+date: 2021-10-04
+thumbnail: /assets/img/mermaid.png
+image: /assets/img/mermaid.png
+header: /assets/img/banner.png
+tags: [Graphs,Documentation]
+comments: false
+---
+Mermaid is a Javascript based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. The main purpose of Mermaid is to help documentation catch up with development
+
+See complete syntax and more examples [[here::https://github.com/mermaid-js/mermaid]]
+
+<div class="mermaid">
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+</div>

@@ -147,10 +147,20 @@ authors:
       instagram: lum_unix
       email: lumunix@icloud.com
 
+
 #####################################################################
 # Build Settings
 # plugins, markdown,
 #####################################################################
+collections:
+  - tutorials
+
+collections_dir: collections
+collections:
+  tutorials:
+    output: true
+    permalink: /:collection/:path/
+
 encoding: utf-8
 plugins:
   - jekyll-feed
