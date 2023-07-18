@@ -42,7 +42,7 @@ This allows for easier installation and updating as you don't have to manage any
 3. Set the `theme` in your project's Jekyll `_config.yml` file:
 
    ```yaml
-   theme: domain-jekll
+   theme: domain-jekyll
    ```
 
 To update the theme run `bundle update`.
