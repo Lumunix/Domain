@@ -1,0 +1,29 @@
+---
+layout: Page
+---
+
+<div class="list-posts">
+    {% for post in site.posts %}
+    <div class="list-post">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <div class="list-post-link">
+                {% if post.thumbnail %}
+                <img class="list-post-image" src="{{"" | prepend: site.baseurl | append : post.thumbnail}}" />
+                {% endif %}
+                <div class="list-post-info">
+                    <div class="list-post-title">{{ post.title }}</div>
+                    <div class="list-post-description">{{ post.description }}</div>
+                </div>
+            </div>
+        </a>
+        <div class="list-post-footer">
+            <span class="list-post-date">{{ post.date | date_to_string}}</span>
+            &middot;
+            <span class="list-post-tags">{{ post.tags | join: ", "}}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% include footer.html %}
+
+<script src="{{site.baseurl}}/assets/js/PostGrid.js"></script>
