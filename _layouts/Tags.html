@@ -21,7 +21,7 @@ layout: Page
         {% for post in site.tags[this_word] %}{% if post.title != null %}
 
         <article class="post feed-title-excerpt-block disable-select"
-                 data-url="{{site.url}}{{site.baseurl}}{{post.url}}">
+                 data-url="{{site.baseurl}}{{post.url}}">
             {% if post.thumbnail %}
             <a class="post-thumbnail" style="background-image: url({{"" | prepend: site.baseurl | append :
             post.thumbnail}})" href="{{post.url | prepend: site.baseurl}}"></a>

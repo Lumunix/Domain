@@ -3,7 +3,7 @@ layout: Page
 ---
 <div id="post-wrapper">
 {% for tutorial in site.tutorials %}
-  <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{site.baseurl}}{{tutorial.url}}">
+  <article class="post feed-title-excerpt-block disable-select" data-url="{{site.baseurl}}{{tutorial.url}}">
     {% if tutorial.thumbnail %}
       <a class="post-thumbnail" style="background-image: url({{"" | prepend: site.baseurl | append : tutorial.thumbnail}})" href="{{tutorial.url | prepend: site.baseurl}}"></a>
     {% else %}

@@ -19,7 +19,7 @@ layout: Page
         {% for tag in site.tags %}
           {%- if tag[0] == page.tutorial_tag -%}
             {% for post in tag[1] %}
-            <article class="post feed-title-excerpt-block disable-select" data-url="{{site.url}}{{site.baseurl}}{{post.url}}">
+            <article class="post feed-title-excerpt-block disable-select" data-url="{{site.baseurl}}{{post.url}}">
               {% if post.thumbnail %}
                 <a class="post-thumbnail" style="background-image: url({{"" | prepend: site.baseurl | append : post.thumbnail}})" href="{{post.url | prepend: site.baseurl}}"></a>
               {% else %}

@@ -2,7 +2,7 @@ services:
   site:
     environment:
       JEKYLL_ENV: development
-    command: jekyll serve --watch --force_polling --config _config.yml,_config-dev.yml —host 0.0.0.0
+    command: jekyll serve --watch --force_polling --config _config.yml,_config-dev.yml --host 0.0.0.0
     image: jekyll/jekyll
     volumes:
       - .:/srv/jekyll
