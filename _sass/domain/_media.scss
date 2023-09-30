@@ -29,7 +29,6 @@
 @media only screen and (max-width : 768px) {
   .sidebar {
     position: relative;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
@@ -54,7 +53,6 @@
 
   .content-box {
     padding: 20px 10px;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
