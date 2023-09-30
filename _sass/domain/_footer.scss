@@ -1,6 +1,13 @@
 /* ==========================================================================
    Footer
    ========================================================================== */
+footer {
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+}
 .page-footer {
   display: flex;
   justify-content: space-between;
