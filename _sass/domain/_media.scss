@@ -2,7 +2,7 @@
    Media
    ========================================================================== */
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 992px) {
   .post {
     max-width: 100%;
     margin: 0 0.9% 1.5%;
@@ -54,6 +54,7 @@
 
   .content-box {
     padding: 20px 10px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
