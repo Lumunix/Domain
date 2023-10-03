@@ -1,6 +1,7 @@
-## [1.3.1](https://github.com/lumunix/domain/releases/tag/1.3.0)
+## [1.4.0](https://github.com/lumunix/domain/releases/tag/1.4.0)
 - Added card based sections for the tags and posts pages
 - Fixed margins on small screen sizes
+- Corrected css for sidebar
 ## [1.3.0](https://github.com/lumunix/domain/releases/tag/1.3.0)
 - Added Tutorials Collection
 - Fixed tables to be full content width
