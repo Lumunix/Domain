@@ -2,7 +2,7 @@
    Media
    ========================================================================== */
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 992px) {
   .post {
     max-width: 100%;
     margin: 0 0.9% 1.5%;
@@ -29,7 +29,6 @@
 @media only screen and (max-width : 768px) {
   .sidebar {
     position: relative;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
@@ -83,7 +82,6 @@
 
   .post {
     max-width: 100%;
-    margin: 2%;
     flex-direction: column;
 
     .post-thumbnail {
