@@ -21,6 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8"
 
-  spec.add_development_dependency "bundler", "~> 2.2.24"
+  spec.add_development_dependency "bundler", "~> 2.3.25"
   spec.add_development_dependency "rake", "~> 12.3.3"
 end
