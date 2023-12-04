@@ -6,4 +6,5 @@ _site/
 Gemfile.lock
 .gem
 .gemrc
+.idea
 assets/.DS_Store
