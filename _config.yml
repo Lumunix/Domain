@@ -92,10 +92,6 @@ preferences:
     enabled: true
   sidenotes:
     enabled: true
-  transclusion:
-    enabled: true
-  image:
-    enabled: true
   pagepreview:
     enabled: true
   highlighting:
