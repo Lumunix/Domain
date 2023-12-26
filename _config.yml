@@ -94,10 +94,11 @@ preferences:
     enabled: true
   pagepreview:
     enabled: true
+  postpreview:
+    text: description # description (default), content
   highlighting:
     enabled: true
     color: DAEDFF
-
   backlinks:
     enabled: true
   related:
@@ -105,7 +106,7 @@ preferences:
   wrapping:
     enabled: true
   pagination:
-    system: infinitescroll ##infinitescroll (default), "infinitescroll", "pagination"
+    system: infinitescroll #infinitescroll (default), "infinitescroll", "pagination"
   contextmenu:
     enabled: true
     copylink:
