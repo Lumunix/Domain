@@ -4,8 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -24,6 +22,20 @@ jobs:
       uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
       with:
         ruby-version: 2.6.x
+
+    - name: Check if version already exists
+      run: |
+          gem_version=$(ruby -r './lib/your_gem/version.rb' -e "puts YourGem::VERSION")
+          response=$(curl -s https://rubygems.org/api/v1/versions/your_gem.json)
+          
+          if echo "$response" | jq -e --arg version "$gem_version" '.[] | select(.number == $version)' > /dev/null; then
+            echo "Version $gem_version already exists on RubyGems. Aborting the build."
+            exit 1
+          else
+            echo "Version $gem_version doesn't exist. Proceeding with the build."
+          fi
+      env:
+         GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
 
     - name: Publish to GPR
       run: |
