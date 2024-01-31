@@ -82,6 +82,7 @@
             var index = lunr(function(){
                 this.ref('id');
                 this.field('title', {boost: 200});
+                this.field('description', {boost: 100});
                 this.field('content', {boost: 2});
                 this.field('url');
                 this.metadataWhitelist = ['position']
@@ -90,6 +91,7 @@
                     this.add({
                         id: i,
                         title: docs[i].title,
+                        description: docs[i].description,
                         content: docs[i].content,
                         url: docs[i].url
                     });
@@ -234,6 +236,7 @@
 
                 var metadata = result.matchData.metadata;
                 var titlePositions = [];
+                var descriptionPositions = [];
                 var contentPositions = [];
                 for (var j in metadata) {
                     var meta = metadata[j];
@@ -243,7 +246,53 @@
                             titlePositions.push(positions[k]);
                         }
                     }
+                    if (meta.description) {
+                        var positions = meta.description.position;
+                        for(var k in positions) {
+                            var position = positions[k];
+                            var previewStart = position[0];
+                            var previewEnd = position[0] + position[1];
+                            var ellipsesBefore = true;
+                            var ellipsesAfter = true;
+                            for (var k = 0; k < 3; k++) {
+                                var nextSpace = doc.description.lastIndexOf(' ', previewStart - 2);
+                                var nextDot = doc.description.lastIndexOf('. ', previewStart - 2);
+                                if ((nextDot >= 0) && (nextDot > nextSpace)) {
+                                    previewStart = nextDot + 1;
+                                    ellipsesBefore = false;
+                                    break;
+                                }
+                                if (nextSpace < 0) {
+                                    previewStart = 0;
+                                    ellipsesBefore = false;
+                                    break;
+                                }
+                                previewStart = nextSpace + 1;
+                            }
 
+                            for (var k = 0; k < 3; k++) {
+                                var nextSpace = doc.description.indexOf(' ', previewEnd + 1);
+                                var nextDot = doc.description.indexOf('. ', previewEnd + 1);
+                                if ((nextDot >= 0) && (nextDot < nextSpace)) {
+                                    previewEnd = nextDot;
+                                    ellipsesAfter = false;
+                                    break;
+                                }
+                                if (nextSpace < 0) {
+                                    previewEnd = doc.description.length;
+                                    ellipsesAfter = false;
+                                    break;
+                                }
+                                previewEnd = nextSpace;
+                            }
+
+                            descriptionPositions.push({
+                                highlight: position,
+                                previewStart: previewStart, previewEnd: previewEnd,
+                                ellipsesBefore: ellipsesBefore, ellipsesAfter: ellipsesAfter
+                            });
+                        }
+                    }
                     if (meta.content) {
                         var positions = meta.content.position;
                         for(var k in positions) {
@@ -297,7 +346,52 @@
                     resultDocOrSection.innerHTML = '';
                     addHighlightedText(resultDocOrSection, doc.title, 0, doc.title.length, titlePositions);
                 }
+                if (descriptionPositions.length > 0) {
+                    descriptionPositions.sort(function(p1, p2){ return p1.highlight[0] - p2.highlight[0] });
+                    var descriptionPosition = descriptionPositions[0];
+                    var previewPosition = {
+                        highlight: [descriptionPosition.highlight],
+                        previewStart: descriptionPosition.previewStart, previewEnd: descriptionPosition.previewEnd,
+                        ellipsesBefore: descriptionPosition.ellipsesBefore, ellipsesAfter: descriptionPosition.ellipsesAfter
+                    };
+                    var previewPositions = [previewPosition];
+                    for (var j = 1; j < descriptionPositions.length; j++) {
+                        descriptionPosition = descriptionPositions[j];
+                        if (previewPosition.previewEnd < descriptionPosition.previewStart) {
+                            previewPosition = {
+                            highlight: [descriptionPosition.highlight],
+                            previewStart: descriptionPosition.previewStart, previewEnd: descriptionPosition.previewEnd,
+                            ellipsesBefore: descriptionPosition.ellipsesBefore, ellipsesAfter: descriptionPosition.ellipsesAfter
+                            }
+                            previewPositions.push(previewPosition);
+                        } else {
+                            previewPosition.highlight.push(descriptionPosition.highlight);
+                            previewPosition.previewEnd = descriptionPosition.previewEnd;
+                            previewPosition.ellipsesAfter = descriptionPosition.ellipsesAfter;
+                        }
+                    }
 
+                    var resultPreviews = document.createElement('div');
+                    resultPreviews.classList.add('search-result-previews');
+                    resultLink.appendChild(resultPreviews);
+
+                    var description = doc.description;
+
+                    for (var j = 0; j < Math.min(previewPositions.length, 2); j++) {
+                        var position = previewPositions[j];
+                        var resultPreview = document.createElement('div');
+                        resultPreview.classList.add('search-result-preview');
+                        resultPreviews.appendChild(resultPreview);
+
+                        if (position.ellipsesBefore) {
+                            resultPreview.appendChild(document.createTextNode('... '));
+                        }
+                        addHighlightedText(resultPreview, description, position.previewStart, position.previewEnd, position.highlight);
+                        if (position.ellipsesAfter) {
+                            resultPreview.appendChild(document.createTextNode(' ...'));
+                        }
+                    }
+                }
                 if (contentPositions.length > 0) {
                     contentPositions.sort(function(p1, p2){ return p1.highlight[0] - p2.highlight[0] });
                     var contentPosition = contentPositions[0];
