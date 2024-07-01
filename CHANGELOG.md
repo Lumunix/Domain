@@ -1,3 +1,6 @@
+## [1.5.0](https://github.com/lumunix/domain/releases/tag/1.5.0)
+- Added PostPreviews for Tags and Posts
+- Icon Updates
 ## [1.4.0](https://github.com/lumunix/domain/releases/tag/1.4.0)
 - Added card based sections for the tags and posts pages
 - Fixed margins on small screen sizes
